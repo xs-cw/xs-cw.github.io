@@ -23,7 +23,7 @@
         
             <copyright>转载标明出处</copyright>
         
-        <lastBuildDate>Sat, 25 Apr 2020 21:20:03 +0800</lastBuildDate>
+        <lastBuildDate>Sat, 25 Apr 2020 21:41:38 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml" />
         
@@ -60,13 +60,43 @@
 <h3 id="redis数据结构">redis数据结构</h3>
 <ul>
 <li>数据结构有:
-| 类型常量     | 对象的名称 | 编码格式                                        |
-| ------------ | ---------- | ----------------------------------------------- |
-| REDIS_STRING | 字符串     | int、raw或者embstr                              |
-| REDIS_LIST   | 列表       | ziplist或者linkedlist                           |
-| REDIS_HASH   | 哈希       | ziplist或者hashtable(hashtable是由dict结构实现) |
-| REDIS_SET    | 集合       | intset或者hashtable                             |
-| REDIS_ZSET   | 有序集合   | ziplist，或者是skiplist与dict结合体             |</li>
+<table>
+<thead>
+<tr>
+<th>类型常量</th>
+<th>对象的名称</th>
+<th>编码格式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>REDIS_STRING</td>
+<td>字符串</td>
+<td>int、raw或者embstr</td>
+</tr>
+<tr>
+<td>REDIS_LIST</td>
+<td>列表</td>
+<td>ziplist或者linkedlist</td>
+</tr>
+<tr>
+<td>REDIS_HASH</td>
+<td>哈希</td>
+<td>ziplist或者hashtable(hashtable是由dict结构实现)</td>
+</tr>
+<tr>
+<td>REDIS_SET</td>
+<td>集合</td>
+<td>intset或者hashtable</td>
+</tr>
+<tr>
+<td>REDIS_ZSET</td>
+<td>有序集合</td>
+<td>ziplist，或者是skiplist与dict结合体</td>
+</tr>
+</tbody>
+</table>
+</li>
 <li>底层实现
 <a href="https://blog.csdn.net/wcf373722432/article/details/78678504">https://blog.csdn.net/wcf373722432/article/details/78678504</a></li>
 </ul>
