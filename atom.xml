@@ -1,0 +1,1718 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
+    <title type="text">life worth</title>
+    <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
+    <updated>2020-04-25T21:20:03+08:00</updated>
+    <id>https://code.saltfish.fun/</id>
+    <link rel="alternate" type="text/html" href="https://code.saltfish.fun/" />
+    <link rel="self" type="application/atom+xml" href="https://code.saltfish.fun/atom.xml" />
+    <author>
+            <name>saltfish</name>
+            <uri>https://code.saltfish.fun/</uri>
+            
+                <email>s4ltfish@gmail.com</email>
+            </author>
+    <rights>转载标明出处</rights>
+    <generator uri="https://gohugo.io/" version="0.65.3">Hugo</generator>
+        <entry>
+            <title type="text">Questions</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/questions/" />
+            <id>https://code.saltfish.fun/posts/questions/</id>
+            <updated>2020-04-14T15:46:04+08:00</updated>
+            <published>2020-04-07T10:42:49+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[乐观锁悲观锁 https://juejin.im/post/5b4977ae5188251b146b2fc8 docker相关 docker实现原理:linux namespace技术……]]></summary>
+            
+                <content type="html"><![CDATA[<ol>
+<li>
+<h3 id="乐观锁悲观锁">乐观锁悲观锁</h3>
+<ul>
+<li><a href="https://juejin.im/post/5b4977ae5188251b146b2fc8">https://juejin.im/post/5b4977ae5188251b146b2fc8</a></li>
+</ul>
+</li>
+<li>
+<h3 id="docker相关">docker相关</h3>
+<ul>
+<li>
+<p>docker实现原理:linux namespace技术</p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/lixiao0320/article/details/94348042">https://blog.csdn.net/lixiao0320/article/details/94348042</a></p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="redis数据结构">redis数据结构</h3>
+<ul>
+<li>数据结构有:
+| 类型常量     | 对象的名称 | 编码格式                                        |
+| ------------ | ---------- | ----------------------------------------------- |
+| REDIS_STRING | 字符串     | int、raw或者embstr                              |
+| REDIS_LIST   | 列表       | ziplist或者linkedlist                           |
+| REDIS_HASH   | 哈希       | ziplist或者hashtable(hashtable是由dict结构实现) |
+| REDIS_SET    | 集合       | intset或者hashtable                             |
+| REDIS_ZSET   | 有序集合   | ziplist，或者是skiplist与dict结合体             |</li>
+<li>底层实现
+<a href="https://blog.csdn.net/wcf373722432/article/details/78678504">https://blog.csdn.net/wcf373722432/article/details/78678504</a></li>
+</ul>
+</li>
+<li>
+<h3 id="redis为什么比mysql快">redis为什么比mysql快</h3>
+<ul>
+<li>redis存储在内存中,mysql磁盘</li>
+<li>redis使用K-V存储,mysql使用B+tree</li>
+</ul>
+</li>
+<li>
+<h3 id="消息队列">消息队列</h3>
+</li>
+<li>
+<h3 id="微服务">微服务</h3>
+<ul>
+<li>
+<p>服务发现</p>
+<p>go-micro,consul工具; zookeeper,k8s</p>
+</li>
+<li>
+<p>负载均衡</p>
+</li>
+<li>
+<p><a href="https://blog.csdn.net/yang731227/article/details/90637535">https://blog.csdn.net/yang731227/article/details/90637535</a></p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="微服务有什么优点">微服务有什么优点？</h3>
+<ul>
+<li>解耦——系统中的服务在很大程度上是解耦的。因此，整个应用程序可以很容易地构建、修改和伸缩</li>
+<li>组件化——微服务被视为独立的组件，可以很容易地替换和升级</li>
+<li>业务功能——微服务非常简单，只关注一个功能</li>
+<li>自治——开发人员和团队可以彼此独立工作，从而提高速度</li>
+<li>持续交付——通过软件创建、测试和批准的系统自动化，允许频繁地发布软件</li>
+<li>责任——微服务不关注应用程序作为项目。相反，他们将应用程序视为自己负责的产品</li>
+<li>分散治理——重点是为正确的工作使用正确的工具。这意味着没有标准化的模式或任何技术模式。开发人员可以自由选择最有用的工具来解决他们的问题</li>
+<li>敏捷——微服务支持敏捷开发。任何新特性都可以快速开发并再次丢弃</li>
+</ul>
+</li>
+<li>
+<h3 id="redis缓存数据一致性">redis缓存数据一致性</h3>
+<ul>
+<li><a href="https://blog.csdn.net/koli6678/article/details/88202245">https://blog.csdn.net/koli6678/article/details/88202245</a></li>
+</ul>
+</li>
+<li>
+<h3 id="redis-缓存穿透">redis 缓存穿透</h3>
+<ul>
+<li>不存在的结果也进行缓存,或者采用布隆过滤拦截不存在结果的请求</li>
+</ul>
+</li>
+<li>
+<h3 id="缓存雪崩">缓存雪崩</h3>
+</li>
+</ol>
+<ul>
+<li>加锁或者使用队列约束请求</li>
+<li>过期时间设置一个随机偏量,避免同时失效</li>
+</ul>
+<ol start="11">
+<li>
+<h3 id="缓存击穿">缓存击穿</h3>
+<table>
+<thead>
+<tr>
+<th>方案</th>
+<th>优点</th>
+<th align="left">缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简单分布式互斥锁（mutex key)</td>
+<td>1. 思路简单  2. 保证一致性</td>
+<td align="left">1.代码复杂度增大  2.存在死锁的风险  3. 存在线程池阻塞的风险</td>
+</tr>
+<tr>
+<td>“提前”使用互斥锁</td>
+<td>1. 保证一致性</td>
+<td align="left">同上</td>
+</tr>
+<tr>
+<td>&quot;永不过期&quot;</td>
+<td>1. 异步构建缓存，不会阻塞线程池</td>
+<td align="left">1. 不保证一致性。2. 代码复杂度增大(每个value都要维护一个timekey)。 3. 占用一定的内存空间(每个value都要维护一个timekey)</td>
+</tr>
+<tr>
+<td>netflix资源隔离组件hystrix</td>
+<td>1. hystrix技术成熟，有效保证后端。2. hystrix监控强大。</td>
+<td align="left">1. 部分访问存在降级策略。</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<h3 id="channel-底层实现线程安全">channel 底层实现线程安全</h3>
+<ul>
+<li>加锁</li>
+<li>关闭通道时会广播到所有</li>
+</ul>
+</li>
+<li>
+<h3 id="sync-map-区别">sync map 区别</h3>
+<ul>
+<li>加锁</li>
+<li>适合大量读,小量写</li>
+<li>tips:第三方优化的 <a href="https://github.com/orcaman/concurrent-map">concurrent-map</a>(想一想，mysql加锁，是不是有表级锁、行级锁，前文的sync.RWMutex加锁方式相当于表级锁。
+而sync.Map其实也是相当于表级锁，只不过多读写分了两个map，本质还是一样的。
+既然这样，那就自然知道优化方向了：就是把锁的粒度尽可能降低来提高运行速度。
+思路：对一个大map进行hash，其内部是n个小map，根据key来来hash确定在具体的那个小map中，这样加锁的粒度就变成1/n了。
+网上找了下，真有大佬实现了)</li>
+</ul>
+</li>
+<li>
+<h3 id="context-超时">context 超时</h3>
+<ul>
+<li></li>
+</ul>
+</li>
+<li>
+<h3 id="登录过程修改角色">登录过程修改角色</h3>
+<ul>
+<li>session消息</li>
+</ul>
+</li>
+<li>
+<h3 id="token与jwt比较">token与jwt比较</h3>
+</li>
+<li>
+<h3 id="登录持久化">登录持久化</h3>
+<ul>
+<li>登录信息加密写入cookie</li>
+<li>oatht2 验证</li>
+</ul>
+</li>
+<li>
+<h3 id="go的前期版本bug">go的前期版本bug</h3>
+</li>
+<li>
+<h3 id="go-相关问题">go 相关问题</h3>
+<ul>
+<li>
+<p><a href="https://talkgo.org/interview/interview-golang-language/">go面试题</a></p>
+</li>
+<li>
+<p><a href="https://studygolang.com/articles/11535">nil的相关理解</a> <a href="https://play.yeyuqiu.com/p/3UV3wfPWoim">PLAY</a></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go">      
+<span class="kn">package</span> <span class="nx">main</span>
+<span class="kn">import</span> <span class="p">(</span>
+    <span class="s">&#34;fmt&#34;</span>
+    <span class="s">&#34;unsafe&#34;</span>
+<span class="p">)</span>
+<span class="kd">func</span> <span class="nf">main</span><span class="p">()</span> <span class="p">{</span>
+<span class="c1">// nil的零值
+</span><span class="c1">// nil没有默认的类型，尽管它是多个类型的零值，必须显式或隐式指定每个nil用法的明确类型
+</span><span class="c1"></span>    <span class="c1">// 明确.
+</span><span class="c1"></span>    <span class="nx">_</span> <span class="p">=</span> <span class="p">(</span><span class="o">*</span><span class="kd">struct</span><span class="p">{})(</span><span class="kc">nil</span><span class="p">)</span>
+    <span class="nx">_</span> <span class="p">=</span> <span class="p">[]</span><span class="nb">int</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+    <span class="nx">_</span> <span class="p">=</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="nb">bool</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+    <span class="nx">_</span> <span class="p">=</span> <span class="kd">chan</span> <span class="nb">string</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span>
+    <span class="nx">_</span> <span class="p">=</span> <span class="p">(</span><span class="kd">func</span><span class="p">())(</span><span class="kc">nil</span><span class="p">)</span>
+    <span class="nx">_</span> <span class="p">=</span> <span class="kd">interface</span><span class="p">{}(</span><span class="kc">nil</span><span class="p">)</span>
+      
+    <span class="c1">// 隐式.
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">_</span> <span class="o">*</span><span class="kd">struct</span><span class="p">{}</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="kd">var</span> <span class="nx">_</span> <span class="p">[]</span><span class="kt">int</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="kd">var</span> <span class="nx">_</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">bool</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="kd">var</span> <span class="nx">_</span> <span class="kd">chan</span> <span class="kt">string</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="kd">var</span> <span class="nx">_</span> <span class="kd">func</span><span class="p">()</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="kd">var</span> <span class="nx">_</span> <span class="kd">interface</span><span class="p">{}</span> <span class="p">=</span> <span class="kc">nil</span>
+          
+<span class="c1">// nil的类型
+</span><span class="c1">// nil类型的所有值的内存布局始终相同,换一句话说就是：不同类型nil的内存地址是一样的。
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">m</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">string</span>
+    <span class="kd">var</span> <span class="nx">ptr</span> <span class="o">*</span><span class="kt">int</span>
+    <span class="kd">var</span> <span class="nx">sl</span> <span class="p">[]</span><span class="kt">int</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%p\n&#34;</span><span class="p">,</span> <span class="nx">m</span><span class="p">)</span>       <span class="c1">//0x0
+</span><span class="c1"></span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%p\n&#34;</span><span class="p">,</span> <span class="nx">ptr</span> <span class="p">)</span>    <span class="c1">//0x0
+</span><span class="c1"></span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="s">&#34;%p\n&#34;</span><span class="p">,</span> <span class="nx">sl</span> <span class="p">)</span>     <span class="c1">//0x0
+</span><span class="c1">// nil值的大小始终与其类型与nil值相同的non-nil值大小相同。因此, 表示不同零值的nil标识符可能具有不同的大小。
+</span><span class="c1"></span>    <span class="c1">// 以下打印结果为64位体系
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">p</span> <span class="o">*</span><span class="kd">struct</span><span class="p">{}</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">p</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 8
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">s</span> <span class="p">[]</span><span class="kt">int</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">s</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 24
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">m</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">bool</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">m</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 8
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">c</span> <span class="kd">chan</span> <span class="kt">string</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">c</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 8
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">f</span> <span class="kd">func</span><span class="p">()</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">f</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 8
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">i</span> <span class="kd">interface</span><span class="p">{}</span> <span class="p">=</span> <span class="kc">nil</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span> <span class="nx">unsafe</span><span class="p">.</span><span class="nf">Sizeof</span><span class="p">(</span> <span class="nx">i</span> <span class="p">)</span> <span class="p">)</span> <span class="c1">// 16
+</span><span class="c1">// nil 值比较
+</span><span class="c1"></span>    <span class="c1">// 1.不同类型的nil是不能比较的
+</span><span class="c1"></span>    <span class="kd">var</span> <span class="nx">m</span> <span class="kd">map</span><span class="p">[</span><span class="kt">int</span><span class="p">]</span><span class="kt">string</span>
+    <span class="kd">var</span> <span class="nx">ptr</span> <span class="o">*</span><span class="kt">int</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Printf</span><span class="p">(</span><span class="nx">m</span> <span class="o">==</span> <span class="nx">ptr</span><span class="p">)</span> <span class="c1">//invalid operation: m == ptr (mismatched types map[int]string and *int)
+</span><span class="c1"></span>    <span class="c1">// 2.有两个情形例外: 两个值之一的类型是另一个的基础类型。
+</span><span class="c1"></span>           <span class="c1">//两个值之一的类型实现了另一个值的类型 (必须是接口类型)。
+</span><span class="c1"></span>    <span class="kd">type</span> <span class="nx">IntPtr</span> <span class="o">*</span><span class="kt">int</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">(</span><span class="nf">IntPtr</span><span class="p">(</span><span class="kc">nil</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="o">*</span><span class="kt">int</span><span class="p">)(</span><span class="kc">nil</span><span class="p">))</span>            <span class="c1">//true
+</span><span class="c1"></span>    <span class="nx">fmt</span><span class="p">.</span><span class="nf">Println</span><span class="p">((</span><span class="kd">interface</span><span class="p">{})(</span><span class="kc">nil</span><span class="p">)</span> <span class="o">==</span> <span class="p">(</span><span class="o">*</span><span class="kt">int</span><span class="p">)(</span><span class="kc">nil</span><span class="p">))</span>    <span class="c1">//false
+</span><span class="c1"></span>          
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li></li>
+</ul>
+</li>
+<li>
+<h3 id="go框架-路由">go框架 路由</h3>
+</li>
+<li>
+<h3 id="订单高并发--超卖">订单高并发  超卖</h3>
+<ul>
+<li>
+<p>超卖问题</p>
+<p><a href="https://juejin.im/post/5dbeb66f51882524a33b9135">https://juejin.im/post/5dbeb66f51882524a33b9135</a></p>
+</li>
+<li>
+<p>超时实现</p>
+<p>轮询数据库,时间轮,redis ,消息队列</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="ws连接数过高">ws连接数过高</h3>
+</li>
+<li>
+<h3 id="k8s">k8s</h3>
+</li>
+<li>
+<h3 id="最近项目">最近项目</h3>
+</li>
+<li>
+<h3 id="常见排序时间复杂度">常见排序时间复杂度</h3>
+</li>
+<li>
+<h3 id="mysql">mysql</h3>
+<ul>
+<li>
+<p>事务隔离</p>
+</li>
+<li>
+<p>慢查询</p>
+</li>
+<li>
+<p>索引优化 索引的数据结构</p>
+<p><a href="https://cloud.tencent.com/developer/news/362898">https://cloud.tencent.com/developer/news/362898</a></p>
+</li>
+<li>
+<p>filesort</p>
+<p>不能使用索引排序时,会使用文件排序,比较慢的外部查询,尽量避免</p>
+</li>
+<li>
+<p>B+tree</p>
+<p><a href="https://www.cnblogs.com/tiancai/p/9024351.html">为什么mysql使用B+树</a></p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="mongodb">Mongodb</h3>
+<ul>
+<li>
+<p>mongodb索引</p>
+<p>通常采用类似btree的结构持久化存储，以保证从索引里快速<code>O(logN)的时间复杂度</code></p>
+<p>MongoDB支持多种类型的索引，包括单字段索引、复合索引、多key索引、文本索引等，每种类型的索引有不同的使用场合</p>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="求数组中两数字之和为指定数字">求数组中两数字之和为指定数字</h3>
+<ul>
+<li>
+<p>双循环遍历</p>
+</li>
+<li>
+<p>字典法: 将差值作为key,下标作为value,遍历数组查询</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go">  <span class="k">for</span> <span class="nx">i</span><span class="p">,</span> <span class="nx">v</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">nums</span> <span class="p">{</span>
+      <span class="k">if</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">ok</span> <span class="o">:=</span> <span class="nx">m</span><span class="p">[</span><span class="nx">v</span><span class="p">];</span> <span class="nx">ok</span> <span class="p">{</span>
+          <span class="k">return</span> <span class="nx">index</span><span class="p">,</span> <span class="nx">i</span>
+      <span class="p">}</span>
+      <span class="nx">m</span><span class="p">[</span><span class="nx">N</span><span class="o">-</span><span class="nx">v</span><span class="p">]</span> <span class="p">=</span> <span class="nx">i</span>
+  <span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+</li>
+<li>
+<h3 id="踩过的坑">踩过的坑</h3>
+<ul>
+<li>for range 数组长度固定,range到的值会有一次复制过程</li>
+<li>sync.Pool 被gc会被直接回收掉，所以不适合存放有状态的内容，只适合状态无关的临时数据,gin框架中存储context对象</li>
+</ul>
+</li>
+<li>
+<h3 id="linux">Linux</h3>
+<ul>
+<li>select、poll、epoll 的区别<a href="https://segmentfault.com/a/1190000003063859">详见Linux IO模式</a>
+<ul>
+<li>
+<p><strong>select</strong> 有数量限制,可以通过宏修改,但是性能会更低</p>
+</li>
+<li>
+<p><strong>poll</strong> 没有数量限制,监控文件数过多也会性能变低</p>
+<blockquote>
+<p>select和poll都需要在返回后，<code>通过遍历文件描述符来获取已经就绪的socket</code>。事实上，同时连 接的大量客户端在一时刻可能只有很少的处于就绪状态，因此随着监视的描述符数量的增长，其效率也会线性下降</p>
+</blockquote>
+</li>
+<li>
+<p><strong>epoll</strong> 增强版的select和poll,更灵活,使用一个文件描述符管理多个描述符，将用户关系的文件描述符的事件存放到内核的一个事件表中，这样在用户空间和内核空间的copy只需一次。</p>
+<p>操作过程需要如下三个接口:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-c" data-lang="c"><span class="kt">int</span> <span class="nf">epoll_create</span><span class="p">(</span><span class="kt">int</span> <span class="n">size</span><span class="p">)</span><span class="err">；</span><span class="c1">//创建一个epoll的句柄，size用来告诉内核这个监听的数目一共有多大,只是一个建议值
+</span><span class="c1"></span><span class="kt">int</span> <span class="n">epoll_ctl</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="kt">int</span> <span class="n">op</span><span class="p">,</span> <span class="kt">int</span> <span class="n">fd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">event</span><span class="p">)</span><span class="err">；</span>
+<span class="kt">int</span> <span class="n">epoll_wait</span><span class="p">(</span><span class="kt">int</span> <span class="n">epfd</span><span class="p">,</span> <span class="k">struct</span> <span class="n">epoll_event</span> <span class="o">*</span><span class="n">events</span><span class="p">,</span> <span class="kt">int</span> <span class="n">maxevents</span><span class="p">,</span> <span class="kt">int</span> <span class="n">timeout</span><span class="p">);</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>epoll工作模式: <strong>LT(level trigger)</strong> ,<strong>ET(edge trigger)</strong></p>
+<ul>
+<li><strong>LT模式</strong>(默认)：当epoll_wait检测到描述符事件发生并将此事件通知应用程序，<code>应用程序可以不立即处理该事件</code>。下次调用epoll_wait时，会再次响应应用程序并通知此事件。<code>同时支持block和no-block socket</code></li>
+<li><strong>ET模式</strong>(高性能)：当epoll_wait检测到描述符事件发生并将此事件通知应用程序，<code>应用程序必须立即处理该事件</code>。如果不处理，下次调用epoll_wait时，不会再次响应应用程序并通知此事件。<code>只支持no-block socket</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<h3 id="其他问题">其他问题</h3>
+<ul>
+<li>
+<p>mysql 隔离级别</p>
+<p><a href="https://www.cnblogs.com/jian-gao/p/10795407.html">https://www.cnblogs.com/jian-gao/p/10795407.html</a></p>
+<p><strong>Mysql的四种隔离级别</strong></p>
+<ul>
+<li>
+<p><strong>Read Uncommitted（读取未提交内容）</strong></p>
+</li>
+<li>
+<p><strong>Read Committed（读取提交内容）</strong></p>
+</li>
+<li>
+<p><strong>Repeatable Read（可重读）</strong>(数据库默认级别)</p>
+</li>
+<li>
+<p><strong>Serializable（可串行化）</strong></p>
+</li>
+<li>
+<p><img src="https://img2018.cnblogs.com/blog/1646034/201904/1646034-20190430095830286-1397235000.png" alt="img"></p>
+</li>
+</ul>
+</li>
+<li>
+<p>mvcc 聚集索引和非聚集索引的结构</p>
+</li>
+<li>
+<p>redis 底层模型 多路复用</p>
+</li>
+<li>
+<p>tcp/ip</p>
+</li>
+<li>
+<p>http2和http1的区别</p>
+</li>
+<li>
+<p>分布式事务 分布式锁</p>
+</li>
+<li>
+<p>一致性哈希</p>
+</li>
+<li>
+<p>ConcurrentHashMap的看法</p>
+</li>
+<li>
+<p>docker 网络模式 隔离级别</p>
+<ul>
+<li>Bridge contauner 桥接式</li>
+<li>Host(open) container 开放式</li>
+<li>Container(join) container 联合挂载式，是host模式的延伸</li>
+<li>None(Close) container 封闭式网络模式</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/question/" term="question" label="question" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/question/" term="question" label="question" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Leetcode63</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode63/" />
+            <id>https://code.saltfish.fun/posts/leetcode63/</id>
+            <updated>2020-04-07T10:52:19+08:00</updated>
+            <published>2020-04-04T12:01:40+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[面试题63. 股票的最大利润 难度中等11收藏分享切换为英文关注反馈 假设把某股票的价格按……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="面试题63-股票的最大利润">面试题63. 股票的最大利润</h3>
+<p>难度中等11收藏分享切换为英文关注反馈</p>
+<p>假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？</p>
+<p><strong>示例 1:</strong></p>
+<pre><code>输入: [7,1,5,3,6,4]
+输出: 5
+解释: 在第 2 天（股票价格 = 1）的时候买入，在第 5 天（股票价格 = 6）的时候卖出，最大利润 = 6-1 = 5 。
+     注意利润不能是 7-1 = 6, 因为卖出价格需要大于买入价格。
+</code></pre><p><strong>示例 2:</strong></p>
+<pre><code>输入: [7,6,4,3,1]
+输出: 0
+解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
+</code></pre><p><strong>限制：</strong></p>
+<pre><code>0 &lt;= 数组长度 &lt;= 10^5
+</code></pre><h4 id="思路">思路:</h4>
+<blockquote>
+<p>遍历数组,取每天最高利润,遍历完成即是最优解</p>
+</blockquote>
+<h4 id="代码">代码:</h4>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">leet63maxProfit</span><span class="p">(</span><span class="nx">prices</span> <span class="p">[]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">prices</span><span class="p">)</span> <span class="p">&lt;</span> <span class="mi">2</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="mi">0</span>
+	<span class="p">}</span>
+    <span class="c1">// 第一天盈利为0
+</span><span class="c1"></span>	<span class="nx">win</span> <span class="o">:=</span> <span class="mi">0</span>
+    <span class="c1">// 第一天亏损为当天价格
+</span><span class="c1"></span>	<span class="nx">lose</span> <span class="o">:=</span> <span class="o">-</span><span class="nx">prices</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">prices</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+        <span class="c1">// 当天盈利与目前最高盈利相比
+</span><span class="c1"></span>		<span class="nx">win</span> <span class="p">=</span> <span class="nf">max</span><span class="p">(</span><span class="nx">win</span><span class="p">,</span> <span class="nx">lose</span><span class="o">+</span><span class="nx">prices</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+        <span class="c1">// 取最少的亏损
+</span><span class="c1"></span>		<span class="nx">lose</span> <span class="p">=</span> <span class="nf">max</span><span class="p">(</span><span class="nx">lose</span><span class="p">,</span> <span class="o">-</span><span class="nx">prices</span><span class="p">[</span><span class="nx">i</span><span class="p">])</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">win</span>
+<span class="p">}</span>
+<span class="kd">func</span> <span class="nf">max</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nx">a</span> <span class="p">&gt;</span> <span class="nx">b</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="nx">a</span>
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">b</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Leetcode1162</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode1162/" />
+            <id>https://code.saltfish.fun/posts/leetcode1162/</id>
+            <updated>2020-04-04T18:05:38+08:00</updated>
+            <published>2020-04-04T00:43:32+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[1162. 地图分析 你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="1162-地图分析">1162. 地图分析</h3>
+<p>你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」（单元格）都用 0 和 1 标记好了。其中 0 代表海洋，1 代表陆地，请你找出一个海洋区域，这个海洋区域到离它最近的陆地区域的距离是最大的。</p>
+<p>我们这里说的距离是「曼哈顿距离」（ Manhattan Distance）：(x0, y0) 和 (x1, y1) 这两个区域之间的距离是 |x0 - x1| + |y0 - y1| 。</p>
+<p>如果我们的地图上只有陆地或者海洋，请返回 -1。</p>
+<p>示例1:</p>
+<p><img src="/img/1336_ex1.jpeg" alt="img"></p>
+<pre><code>输入：[[1,0,1],[0,0,0],[1,0,1]]
+输出：2
+解释： 
+海洋区域 (1, 1) 和所有陆地区域之间的距离都达到最大，最大距离为 2。
+</code></pre><p><strong>示例 2：</strong></p>
+<p><img src="/img/1336_ex1.jpeg" alt="img"></p>
+<pre><code>输入：[[1,0,0],[0,0,0],[0,0,0]]
+输出：4
+解释： 
+海洋区域 (2, 2) 和所有陆地区域之间的距离都达到最大，最大距离为 4。
+</code></pre><p><strong>提示：</strong></p>
+<ol>
+<li><code>1 &lt;= grid.length == grid[0].length &lt;= 100</code></li>
+<li><code>grid[i][j]</code> 不是 <code>0</code> 就是 <code>1</code></li>
+</ol>
+<h3 id="思路">思路</h3>
+<p>筛选到所有陆地,逐个向外(四个方向)遍历一次,并将遍历到的海洋标记为已经遍历,记录下遍历距离,最后遍历到的海洋即是最远位置的,返回此时距离.</p>
+<h3 id="代码">代码</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">maxDistance</span><span class="p">(</span><span class="nx">grid</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
+	<span class="nx">land</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([][]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="nx">length</span> <span class="o">:=</span> <span class="nb">len</span><span class="p">(</span><span class="nx">grid</span><span class="p">)</span>
+    <span class="c1">// 拓展方向
+</span><span class="c1"></span>	<span class="nx">dx</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+	<span class="nx">dy</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">}</span>
+    <span class="c1">// 记录陆地坐标
+</span><span class="c1"></span>	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">grid</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="nx">i2</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">{</span>
+			<span class="k">if</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="nx">i2</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span> <span class="p">{</span>
+				<span class="nx">land</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">land</span><span class="p">,</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="nx">i</span><span class="p">,</span> <span class="nx">i2</span><span class="p">})</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+    <span class="c1">// 没有陆地或者没有海洋返回-1
+</span><span class="c1"></span>	<span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="nx">land</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="o">||</span> <span class="nb">len</span><span class="p">(</span><span class="nx">land</span><span class="p">)</span> <span class="o">==</span> <span class="nx">length</span><span class="o">*</span><span class="nx">length</span> <span class="p">{</span>
+		<span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+	<span class="p">}</span>
+	<span class="nx">i</span> <span class="o">:=</span> <span class="mi">0</span>
+	<span class="k">for</span> <span class="p">;</span> <span class="nx">i</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">land</span><span class="p">);</span> <span class="nx">i</span><span class="o">++</span> <span class="p">{</span>
+		<span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">:=</span> <span class="nx">land</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">land</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+		<span class="k">for</span> <span class="nx">j</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">j</span> <span class="p">&lt;</span> <span class="mi">4</span><span class="p">;</span> <span class="nx">j</span><span class="o">++</span> <span class="p">{</span>
+			<span class="nx">newX</span><span class="p">,</span> <span class="nx">newY</span> <span class="o">:=</span> <span class="nx">x</span><span class="o">+</span><span class="nx">dx</span><span class="p">[</span><span class="nx">j</span><span class="p">],</span> <span class="nx">y</span><span class="o">+</span><span class="nx">dy</span><span class="p">[</span><span class="nx">j</span><span class="p">]</span>
+			<span class="k">if</span> <span class="nx">newX</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">newY</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">newX</span> <span class="o">&gt;=</span> <span class="nx">length</span> <span class="o">||</span> <span class="nx">newY</span> <span class="o">&gt;=</span> <span class="nx">length</span> <span class="o">||</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">newX</span><span class="p">][</span><span class="nx">newY</span><span class="p">]</span> <span class="o">!=</span> <span class="mi">0</span> <span class="p">{</span>
+				<span class="k">continue</span>
+			<span class="p">}</span>
+			<span class="nx">grid</span><span class="p">[</span><span class="nx">newX</span><span class="p">][</span><span class="nx">newY</span><span class="p">]</span> <span class="p">=</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">x</span><span class="p">][</span><span class="nx">y</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span>
+			<span class="nx">land</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">land</span><span class="p">,</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="nx">newX</span><span class="p">,</span> <span class="nx">newY</span><span class="p">})</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+	<span class="nx">i</span><span class="o">--</span>
+	<span class="nx">x</span><span class="p">,</span> <span class="nx">y</span> <span class="o">:=</span> <span class="nx">land</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="nx">land</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+	<span class="k">return</span> <span class="nx">grid</span><span class="p">[</span><span class="nx">x</span><span class="p">][</span><span class="nx">y</span><span class="p">]</span> <span class="o">-</span> <span class="mi">1</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">WSL踩坑</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-problems/" />
+            <id>https://code.saltfish.fun/posts/wsl-problems/</id>
+            <updated>2020-03-12T17:24:21+08:00</updated>
+            <published>2020-03-11T19:29:24+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[wsl ubuntu 更新中断 更新中断后部分软件安装会报错,可以先将/var/lib/dpkg/inf……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="wsl-ubuntu-更新中断">wsl ubuntu 更新中断</h3>
+<p>更新中断后部分软件安装会报错,可以先将<code>/var/lib/dpkg/info</code>目录下对应的文件备份
+然后再重新更新.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo mv /var/lib/dpkg/info/<span class="o">{</span>pkg<span class="o">}</span>.postinst /var/lib/dpkg/info/<span class="o">{</span>pkg<span class="o">}</span>.postinst.bak
+</code></pre></td></tr></table>
+</div>
+</div>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/" term="问题" label="问题" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">WSL下oh-my-zsh安装</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-zsh/" />
+            <id>https://code.saltfish.fun/posts/wsl-zsh/</id>
+            <updated>2020-03-13T13:57:17+08:00</updated>
+            <published>2020-03-11T16:44:40+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[安装ZSH 以Ubuntu为例,安装步骤 1 2 3 4 5 # 安装zsh sudo apt-get install zsh # 安装oh-my……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="安装zsh">安装ZSH</h3>
+<ul>
+<li>以Ubuntu为例,安装步骤</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装zsh</span>
+sudo apt-get install zsh
+<span class="c1"># 安装oh-my-zsh</span>
+sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
+
+</code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>oh-myzsh 其他自定义配置请<a href="https://www.jianshu.com/p/ba782b57ae96">参考</a></p>
+</li>
+<li>
+<p>windows文件夹显示问题
+Ubuntu下没有<code>/etc/DIR_COLORS</code>,所以需要以下操作</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">dircolors -p &gt; ~/.dircolors
+</code></pre></td></tr></table>
+</div>
+</div><p>修改刚生成的文件,推荐vim,可以直接预览颜色</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">vim ~/.dircolors
+</code></pre></td></tr></table>
+</div>
+</div><p>找到如下一行,修改对应颜色</p>
+<pre><code>OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
+</code></pre><p>例如改为黑色字体红色背景,颜色与背景<a href="#style">参考样式</a></p>
+<pre><code>OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
+</code></pre><p>让修改后的文件生效,将下面的代码添加到<code>~/.zshrc</code></p>
+<pre><code>eval &quot;$(dircolors ~/.dircolors)&quot;;
+</code></pre></li>
+</ul>
+<p><a name="style">常见样式参考</a></p>
+<pre><code>文字效果  
+00  默认  
+01  加粗 
+04  下划线 
+05  闪烁  
+07  反显  
+08  隐藏  
+文字颜色  
+30 - 黑色
+31 - 红色
+32 - 绿色
+33 - 黄色
+34 - 蓝色
+35 - 洋红色
+36 - 蓝绿色
+37 - 白色
+背景颜色  
+40 - 黑色
+41 - 红色
+42 - 绿色
+43 - 黄色
+44 - 蓝色
+45 - 洋红色
+46 - 蓝绿色
+47 - 白色
+</code></pre>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/oh-my-zsh/" term="oh-my-zsh" label="oh-my-zsh" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">WSL与vscode安装</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-install/" />
+            <id>https://code.saltfish.fun/posts/wsl-install/</id>
+            <updated>2020-03-12T17:24:21+08:00</updated>
+            <published>2020-03-11T15:34:29+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[安装WSL 启用WSL 以管理员身份运行 Pow­er­Shell (WIN+X)，输入下面……]]></summary>
+            
+                <content type="html"><![CDATA[<h3 id="安装wsl">安装WSL</h3>
+<ul>
+<li>
+<h4 id="启用wsl">启用WSL</h4>
+<p>以管理员身份运行 Pow­er­Shell (WIN+X)，输入下面的命令开启 “适用于 Linux 的 Win­dows 子系统” 功能，并重启。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-powershell" data-lang="powershell"><span class="nb">Enable-WindowsOptionalFeature</span> <span class="n">-Online</span> <span class="n">-FeatureName</span> <span class="n">Microsoft-Windows-Subsystem-Linux</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<h4 id="使用-lxrunoffline-安装-wsl">使用 LxRunOffline 安装 WSL</h4>
+<p>下载解压 <a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL0REb1NvbGl0YXJ5L0x4UnVuT2ZmbGluZS9yZWxlYXNlcw==">LxRunOffline</a> ，并设置环境变量以便使用<code>lxrunoffline</code>命令。</p>
+<p>下载 <a href="https://p3terx.com/go/aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvd2luZG93cy93c2wvaW5zdGFsbC1tYW51YWw=">WSL 官方离线包</a>，解压后可得到名为 <code>install.tar.gz</code> 的文件。</p>
+<p>输入以下命令进行安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">lxrunoffline i -n &lt;WSL名称&gt; -d &lt;安装路径&gt; -f &lt;安装包路径&gt;install.tar.gz
+</code></pre></td></tr></table>
+</div>
+</div><blockquote>
+<p>加入<code>-s</code>参数可在桌面创建快捷方式。
+其他lxrunoffline 命令细节,请<a href="https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html">参考</a></p>
+</blockquote>
+</li>
+<li>
+<h4 id="修改wsl目录映射关系">修改WSL目录映射关系</h4>
+<p>wsl docker安装,需要修改目录映射
+Windows 10 18.03+ 操作方式 <code>sudo nano /etc/wsl.conf</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-ini" data-lang="ini"><span class="k">[automount]</span>
+<span class="na">root</span> <span class="o">=</span> <span class="s">/</span>
+<span class="na">options</span> <span class="o">=</span> <span class="s">&#34;metadata&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div><p>其他低版本采用目录映射</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">sudo mkdir /c
+sudo mount --bind /mnt/c /c
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>安装完成后退出wsl(ctrl+d), 然后<code>WIN+L</code>再重新进入,就可以发现<code>c</code>盘在根目录了</strong></p>
+</li>
+<li>
+<h3 id="安装vscode">安装vscode</h3>
+<ul>
+<li>
+<p>指定插件下载路径</p>
+<p>下载安装vscode,默认插件安装路径在<code>C:\Users\{USER}\.vscode\extensions</code></p>
+<p>可以选择创建软链接的方式安装在其他目录,以减少C盘占用,使用管理员权限打开<code>CMD</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 删除已存在的extensions目录</span>
+rmdir /s/q extensions    
+<span class="c1"># 创建软链接</span>
+mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <span class="s2">&#34;{指定目录}&#34;</span>
+</code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>安装remote-wsl</p>
+<p>打开wsl终端窗口，切换到<code>~</code>目录，在终端中输入<code>code-insiders</code>,执行完毕后
+除了主题等插件外,其他插件会被安装到wsl内.且wsl和windows共享环境变量,
+可以在wsl中直接调用exe程序(需要带上.exe后缀)更多操作请查看<a href="https://docs.microsoft.com/en-us/windows/wsl/interop">官方文档</a></p>
+</li>
+</ul>
+</li>
+</ul>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/vscode/" term="vscode" label="vscode" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/lxrunoffline/" term="LxRunOffline" label="LxRunOffline" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Leetcode986</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode986/" />
+            <id>https://code.saltfish.fun/posts/leetcode986/</id>
+            <updated>2020-03-08T15:20:54+08:00</updated>
+            <published>2020-03-08T14:45:17+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[986. 区间列表的交集 给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="986-区间列表的交集">986. 区间列表的交集</h2>
+<p>给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已经排序。</p>
+<p>返回这两个区间列表的交集。</p>
+<p>（形式上，闭区间 [a, b]（其中 a &lt;= b）表示实数 x 的集合，而 a &lt;= x &lt;= b。两个闭区间的交集是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3]。）</p>
+<p><strong>示例：</strong></p>
+<p><img src="/img/interval1.png" alt="img"></p>
+<blockquote>
+<p>输入：A = [[0,2],[5,10],[13,23],[24,25]], B = [[1,5],[8,12],[15,24],[25,26]]
+输出：[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
+注意：输入和所需的输出都是区间对象组成的列表，而不是数组或列表。</p>
+</blockquote>
+<p>提示：</p>
+<ol>
+<li><code>0 &lt;= A.length &lt; 1000 </code></li>
+<li><code>0 &lt;= B.length &lt; 1000</code></li>
+<li><code>0 &lt;= A[i].start, A[i].end, B[i].start, B[i].end &lt; 10^9</code></li>
+</ol>
+<h2 id="思路">思路</h2>
+<p>遍历A,先判断两个区间是否有交集,如果有,则交集取<code>max(A[i][0],B[j][0])</code>,<code>min(A[i][1],B[j][1])</code></p>
+<h2 id="代码">代码</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">intervalIntersection</span><span class="p">(</span><span class="nx">A</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">B</span> <span class="p">[][]</span><span class="kt">int</span><span class="p">)</span> <span class="p">[][]</span><span class="kt">int</span> <span class="p">{</span>
+	<span class="nx">res</span> <span class="o">:=</span> <span class="nb">make</span><span class="p">([][]</span><span class="kt">int</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="k">range</span> <span class="nx">A</span> <span class="p">{</span>
+		<span class="k">for</span> <span class="nx">ii</span> <span class="o">:=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">ii</span> <span class="p">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="nx">B</span><span class="p">);</span> <span class="nx">ii</span><span class="o">++</span> <span class="p">{</span>
+			<span class="k">if</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="p">&gt;</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="p">{</span>
+				<span class="nx">ii</span> <span class="p">=</span> <span class="nb">len</span><span class="p">(</span><span class="nx">B</span><span class="p">)</span>
+				<span class="k">continue</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="p">&lt;</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="p">{</span>
+				<span class="k">continue</span>
+			<span class="p">}</span>
+			<span class="nx">r</span> <span class="o">:=</span> <span class="p">[]</span><span class="kt">int</span><span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">}</span>
+			<span class="k">if</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span> <span class="p">{</span>
+				<span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="p">=</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">0</span><span class="p">]</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span> <span class="p">{</span>
+				<span class="nx">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="nx">A</span><span class="p">[</span><span class="nx">i</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+			<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+				<span class="nx">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">=</span> <span class="nx">B</span><span class="p">[</span><span class="nx">ii</span><span class="p">][</span><span class="mi">1</span><span class="p">]</span>
+			<span class="p">}</span>
+			<span class="k">if</span> <span class="nx">r</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">r</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="p">{</span>
+				<span class="nx">res</span> <span class="p">=</span> <span class="nb">append</span><span class="p">(</span><span class="nx">res</span><span class="p">,</span> <span class="nx">r</span><span class="p">)</span>
+			<span class="p">}</span>
+		<span class="p">}</span>
+
+	<span class="p">}</span>
+	<span class="k">return</span> <span class="nx">res</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Leetcode88</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode88/" />
+            <id>https://code.saltfish.fun/posts/leetcode88/</id>
+            <updated>2020-03-07T22:08:07+08:00</updated>
+            <published>2020-03-07T21:30:36+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[88. 合并两个有序数组 给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 num1 成为一……]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="88-合并两个有序数组">88. 合并两个有序数组</h2>
+<p>给你两个有序整数数组 <code>nums1</code> 和 <code>nums2</code>，请你将 <code>nums2</code> 合并到 <code>nums1</code> 中，使 <code>num1</code> 成为一个有序数组。</p>
+<h3 id="说明">说明:</h3>
+<ul>
+<li>初始化 <code>nums1</code> 和 <code>nums2</code> 的元素数量分别为 m 和 n 。</li>
+<li>你可以假设 <code>nums1</code> 有足够的空间（空间大小大于或等于 m + n）来保存 <code>nums2</code> 中的元素。</li>
+</ul>
+<h2 id="示例">示例:</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="nx">输入</span><span class="p">:</span>
+<span class="nx">nums1</span> <span class="p">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span> <span class="nx">m</span> <span class="p">=</span> <span class="mi">3</span>
+<span class="nx">nums2</span> <span class="p">=</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">],</span>       <span class="nx">n</span> <span class="p">=</span> <span class="mi">3</span>
+
+<span class="nx">输出</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</code></pre></td></tr></table>
+</div>
+</div><h2 id="思路">思路</h2>
+<p>从<code>nums1</code>的最后一个位置(<code>i=len(nums1)-1</code>)开始依次填入两个数组中最大的;</p>
+<p>因为两个数组都是有序的,所以只需要从最后的位置比较即可;</p>
+<p><code>nums1</code>与<code>nums2</code>比较下标为<code>m-1</code>和<code>n-1</code>,将两者中较大的移到<code>nums1</code>的尾部;</p>
+<p>将取出数字的数组下标(m或者n)和<code>i</code>都往前移动一步,直到<code>nums2</code>取完.</p>
+<p>若<code>nums1</code>的m&lt;0,则只需要将<code>nums2</code>的剩余数字依次填充到<code>i</code>下标即可</p>
+<h2 id="代码">代码</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-go" data-lang="go"><span class="kd">func</span> <span class="nf">merge</span><span class="p">(</span><span class="nx">nums1</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">m</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">nums2</span> <span class="p">[]</span><span class="kt">int</span><span class="p">,</span> <span class="nx">n</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+	<span class="k">if</span> <span class="nx">m</span> <span class="o">==</span> <span class="mi">0</span> <span class="p">{</span>
+		<span class="nb">copy</span><span class="p">(</span><span class="nx">nums1</span><span class="p">,</span> <span class="nx">nums2</span><span class="p">)</span>
+		<span class="k">return</span>
+	<span class="p">}</span>
+	<span class="nx">m</span><span class="o">--</span>
+	<span class="nx">n</span><span class="o">--</span>
+	<span class="k">for</span> <span class="nx">i</span> <span class="o">:=</span> <span class="nb">len</span><span class="p">(</span><span class="nx">nums1</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&gt;=</span> <span class="mi">0</span> <span class="o">&amp;&amp;</span> <span class="nx">n</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span><span class="o">--</span> <span class="p">{</span>
+		<span class="k">if</span> <span class="nx">m</span> <span class="p">&lt;</span> <span class="mi">0</span> <span class="o">||</span> <span class="nx">nums1</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="nx">nums2</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span> <span class="p">{</span>
+			<span class="nx">nums1</span><span class="p">[</span><span class="nx">i</span><span class="p">]</span> <span class="p">=</span> <span class="nx">nums2</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span>
+			<span class="nx">n</span><span class="o">--</span>
+            <span class="k">continue</span>
+		<span class="p">}</span>
+		<span class="k">if</span> <span class="nx">nums1</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span> <span class="p">&gt;</span> <span class="nx">nums2</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span> <span class="p">{</span>
+			<span class="nx">nums1</span><span class="p">[</span><span class="nx">i</span><span class="p">],</span> <span class="nx">nums1</span><span class="p">[</span><span class="nx">m</span><span class="p">]</span> <span class="p">=</span> <span class="nx">nums1</span><span class="p">[</span><span class="nx">m</span><span class="p">],</span> <span class="nx">nums2</span><span class="p">[</span><span class="nx">n</span><span class="p">]</span>
+			<span class="nx">m</span><span class="o">--</span>
+		<span class="p">}</span>
+	<span class="p">}</span>
+<span class="p">}</span>
+</code></pre></td></tr></table>
+</div>
+</div>]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Docker-Compose安装出错</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/docker-compose-error/" />
+            <id>https://code.saltfish.fun/posts/docker-compose-error/</id>
+            <updated>2020-03-12T00:36:03+08:00</updated>
+            <published>2020-03-04T21:05:39+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[1、安装docker-compose 首先检查Linux有没有安装Python-pip……]]></summary>
+            
+                <content type="html"><![CDATA[<p><strong>1、安装docker-compose</strong></p>
+<ol>
+<li>
+<p>首先检查Linux有没有安装Python-pip包，直接执行 <code>yum install python-pip</code></p>
+</li>
+<li>
+<p>没有python-pip包就执行命令 <code>yum -y install epel-release</code></p>
+</li>
+<li>
+<p>执行成功之后，再次执行<code>yum install python-pip</code></p>
+</li>
+<li>
+<p>对安装好的pip进行升级 <code>pip install --upgrade pip</code></p>
+</li>
+<li>
+<p>安装好pip之后，就可以安装Docker-Compose了.</p>
+</li>
+<li>
+<p>在linunx终端执行：<code>pip install docker-compose</code></p>
+</li>
+</ol>
+<p>执行完之后，输入<code>docker-compse -version</code>，报如下错误</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">Traceback <span class="o">(</span>most recent call last<span class="o">)</span>:
+  File <span class="s2">&#34;/usr/bin/docker-compose&#34;</span>, line 7, in &lt;module&gt;
+    from compose.cli.main import main
+  File <span class="s2">&#34;/usr/lib/python2.7/site-packages/compose/cli/main.py&#34;</span>, line 17, in &lt;module&gt;
+    import docker
+  File <span class="s2">&#34;/usr/lib/python2.7/site-packages/docker/__init__.py&#34;</span>, line 2, in &lt;module&gt;
+    from .api import APIClient
+  File <span class="s2">&#34;/usr/lib/python2.7/site-packages/docker/api/__init__.py&#34;</span>, line 2, in &lt;module&gt;
+    from .Client import APIClient
+...
+    
+</code></pre></td></tr></table>
+</div>
+</div><p><strong>2、解决方法：</strong></p>
+<p>卸载已经安装的Python的urllib3包</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">pip uninstall urllib3
+</code></pre></td></tr></table>
+</div>
+</div><p>然后就能够成功安装python-urllib3软件包</p>
+<p><strong>3、运行certbot命令提示urllib3版本低</strong></p>
+<p>如果你成功安装了python-urllib3软件包，在运行certbot命令时提示urllib3版本太低，可以使用pip命令升级urllib3包：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">pip install --upgrade urllib3
+</code></pre></td></tr></table>
+</div>
+</div><p>执行成功之后：<code>docker-compose  --version</code> 查看版本信息.</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash"> <span class="nv">$docker</span>-compose -version 
+ docker-compose version 1.8.1, build 878cff1  
+</code></pre></td></tr></table>
+</div>
+</div><p>本文来自<a href="https://www.cnblogs.com">博客园</a></p>
+<p>感谢作者<a href="https://home.cnblogs.com/u/richiewlq/">Richie`</a></p>
+<p>查看原文<a href="https://www.cnblogs.com/richiewlq/p/9203504.html">CentOS7下安装Docker-Compose No module named 'requests.packages.urllib3'</a></p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/docker/" term="docker" label="docker" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/docker-compose/" term="docker-compose" label="docker-compose" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">系统安装找到启动路径</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/system-find-boot/" />
+            <id>https://code.saltfish.fun/posts/system-find-boot/</id>
+            <updated>2020-03-12T00:36:30+08:00</updated>
+            <published>2020-03-04T21:05:39+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[windows 系统安装启动盘启动时找不到启动路径 找BOOTMGR文件在那个盘符find /bootmgr 这样会在……]]></summary>
+            
+                <content type="html"><![CDATA[<p>windows 系统安装启动盘启动时找不到启动路径</p>
+<ol>
+<li>找BOOTMGR文件在那个盘符<code>find /bootmgr</code></li>
+<li>这样会在所有的磁盘根目录寻找文件，找到文件后接着进入该盘符 <code>root (hd0,0)</code></li>
+<li>然后转交引导权<code>chainloader /bootmgr</code>
+再执行<code>boot</code>
+启动
+这样就OK了~！</li>
+</ol>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" term="系统安装" label="系统安装" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Go项目标准结构</title>
+            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/go-project-layout/" />
+            <id>https://code.saltfish.fun/posts/go-project-layout/</id>
+            <updated>2020-03-04T14:56:42+08:00</updated>
+            <published>2020-03-02T14:28:16+08:00</published>
+            <author>
+                    <name>saltfish</name>
+                    <uri>https://www.saltfish.fun/</uri>
+                    <email>s4ltfish@gmail.com</email>
+                    </author>
+            <rights>转载标明出处</rights>
+    
+    <summary type="html"><![CDATA[[`project-layout`](https://github.com/golang-standards/project-layout)项目总结了Go 项目的布局,这是Go应用程序项目的基本布局, 并不是Go核心开发团队定义的官方标准， 但是，这是Go生态系统中的一种常见的项目布局模式。]]></summary>
+            
+                <content type="html"><![CDATA[<h2 id="go目录">Go目录</h2>
+<h3 id="cmd"><code>/cmd</code></h3>
+<p>该目录用于存放 Go 项目的入口，即 main.go。一般来说，我们应该在 <code>cmd</code>目录下创建子目录，子目录名称代表可执行程序的名称（例如<code>/cmd/myapp</code>）。上面列出的优秀开源项目基本上遵循了这一规则。
+一般来说，该目录中的代码应该尽可能少。如果认为该代码可以导入并在其他项目中使用，那么它应该位于<code>/pkg</code>目录中。如果该代码不可重用，或者不希望其他人重用它，则将该代码放在<code>/internal</code>目录中。</p>
+<h3 id="internal"><code>/internal</code></h3>
+<p>这是 Go 包的一个特性，放在该包中的代码，表明只希望项目内部使用，是项目或库私有的，其他项目或库不能使用。请注意，不限于顶层internal目录，internal在项目树的任何级别上都可以有多个目录。
+可以选择向内部包中添加一些额外的结构，以分隔共享和非共享内部代码。它不是必需的（尤其是对于较小的项目），但是最好有视觉提示来显示包的用途。实际应用程序代码可以进入<code>/internal/app</code>目录（例如<code>/internal/app/myapp</code>），而这些应用程序共享的代码可以进入<code>/internal/pkg</code>目录（例如<code>/internal/pkg/myprivlib</code>）。</p>
+<h3 id="pkg"><code>/pkg</code></h3>
+<p>该包可以和 <code>internal</code>对应，是公开的。一般来说，放在该包的代码应该和具体业务无关，方便本项目和其他项目重用。当你决定将代码放入该包时，你应该对其负责，因为别人很可能使用它。
+如果应用程序项目很小，并且嵌套的额外层次不会增加太多价值（除非您真的想要，请不要使用它。当它变得足够大并且您的根目录变得非常复杂时（特别是如果您有很多非Go应用程序组件），请考虑一下。</p>
+<h3 id="vendor"><code>/vendor</code></h3>
+<p>应用程序依存关系，<code>GO1.13+</code>启用go module来代替，并不需要vendor目录了。</p>
+<h2 id="server-application目录">server application目录</h2>
+<h3 id="api"><code>/api</code></h3>
+<p>该目录用来存放 OpenAPI/Swagger 规则说明, JSON 格式定义, 协议定义文件等。也有可能用来存放具体的对外公开 API.</p>
+<h2 id="web-application-目录">web application 目录</h2>
+<h3 id="web"><code>/web</code></h3>
+<p>Web应用程序特定的组件：静态Web资产，服务器端模板和SPA。</p>
+<h2 id="common-application目录">common application目录</h2>
+<h3 id="configs"><code>/configs</code></h3>
+<p>配置文件模板或默认配置。</p>
+<h3 id="init"><code>/init</code></h3>
+<p>存放随着系统自动启动脚本，如：systemd, upstart, sysv；或者通过 supervisor 进行进程管理的脚本。</p>
+<h3 id="scripts"><code>/scripts</code></h3>
+<p>存放 build、install、analysis 等操作脚本。这些脚本使得项目根目录的 Makefile 很简洁。</p>
+<h3 id="build"><code>/build</code></h3>
+<p>该目录用于存放打包和持续集成相关脚本。将云（AMI），容器（Docker），操作系统（deb，rpm，pkg）软件包配置和脚本放在/build/package目录中。
+将CI（travis，circle，drone）配置和脚本放在/build/ci目录中。请注意，某些配置项工具（例如Travis CI）对于其配置文件的位置非常挑剔。尝试将配置文件放在<code>/build/ci</code>目录中，将它们链接到CI工具期望它们的位置（如果可能）。</p>
+<h3 id="deployments"><code>/deployments</code></h3>
+<p>IaaS，PaaS，系统和容器编排部署配置和模板（docker-compose，kubernetes / helm，mesos，terraform，bosh）。</p>
+<h3 id="test"><code>/test</code></h3>
+<p>一般用来存放除单元测试、基准测试之外的测试，比如集成测试、测试数据等。</p>
+<h2 id="其他目录">其他目录</h2>
+<h3 id="docs"><code>/docs</code></h3>
+<p>设计和用户文档（除了godoc生成的文档之外）。</p>
+<h3 id="tools"><code>/tools</code></h3>
+<p>存放项目的支持工具。请注意，这些工具可以从<code>/pkg</code>和<code>/internal</code>目录导入代码。</p>
+<h3 id="examples"><code>/examples</code></h3>
+<p>应用程序或公共库的示例。</p>
+<h3 id="third_party"><code>/third_party</code></h3>
+<p>外部帮助程序工具，分叉的代码和其他第三方工具（例如Swagger UI）。</p>
+<h3 id="githooks"><code>/githooks</code></h3>
+<p>githooks</p>
+<h3 id="assets"><code>/assets</code></h3>
+<p>与资源库一起使用的其他资产（图像，徽标等）。</p>
+<h3 id="website"><code>/website</code></h3>
+<p>如果不使用Github页面，则在这里放置项目的网站数据。</p>
+<h2 id="不应该拥有的目录">不应该拥有的目录</h2>
+<h3 id="src"><code>/src</code></h3>
+<p>有些Go项目确实有一个<code>src</code>文件夹，但通常是Java开发人员通用模式。如果可以，请尝试不要采用此Java模式。你真的不希望您的Go代码或Go项目看起来像Java😀</p>
+<p>不要混淆了项目的<code>/src</code>和go语言的<code>GOPATH</code>，如果你的项目里有<code>/src</code>,那么你的项目路径可能就是<code>/some/path/to/workspace/src/your_project/src/your_code.go</code>。go 1.11之后可以将项目放在<code>GOPATH</code>之外的地方，但最好还是不要在项目里使用<code>/src</code>目录</p>
+]]></content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/categories/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/go/" term="go" label="go" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://code.saltfish.fun/tags/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/" term="项目结构" label="项目结构" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>

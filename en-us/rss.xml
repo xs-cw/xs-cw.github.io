@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>life worth</title>
+        <link>https://code.saltfish.fun/en-us/</link>
+        <description>Blog of reuixiy in English.</description>
+        <generator>Hugo 0.65.3 https://gohugo.io/</generator>
+        
+            <language>en-US</language>
+        
+        
+            <managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor>
+        
+        
+            <webMaster>s4ltfish@gmail.com (saltfish)</webMaster>
+        
+        
+            <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+        
+        <lastBuildDate>Sat, 25 Apr 2020 21:20:03 +0800</lastBuildDate>
+        
+            <atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/en-us/rss.xml" />
+        
+        
+            <item>
+                <title>Go Project Layout</title>
+                <link>https://code.saltfish.fun/en-us/posts/go-project-layout/</link>
+                <guid isPermaLink="true">https://code.saltfish.fun/en-us/posts/go-project-layout/</guid>
+                <pubDate>Mon, 02 Mar 2020 14:28:16 +0800</pubDate>
+                
+                    <author>s4ltfish@gmail.com (saltfish)</author>
+                
+                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
+                
+                    <description><![CDATA[<h2 id="go-directories">Go Directories</h2>
+<h3 id="cmd"><code>/cmd</code></h3>
+<p>Main applications for this project.</p>
+<p>The directory name for each application should match the name of the executable you want to have (e.g., <code>/cmd/myapp</code>).</p>
+<p>Don't put a lot of code in the application directory. If you think the code can be imported and used in other projects, then it should live in the <code>/pkg</code> directory. If the code is not reusable or if you don't want others to reuse it, put that code in the <code>/internal</code> directory. You'll be surprised what others will do, so be explicit about your intentions!</p>
+<p>It's common to have a small <code>main</code> function that imports and invokes the code from the <code>/internal</code> and <code>/pkg</code> directories and nothing else.</p>
+<p>See the <a href="cmd/README.md"><code>/cmd</code></a> directory for examples.</p>
+<h3 id="internal"><code>/internal</code></h3>
+<p>Private application and library code. This is the code you don't want others importing in their applications or libraries. Note that this layout pattern is enforced by the Go compiler itself. See the Go 1.4 <a href="https://golang.org/doc/go1.4#internalpackages"><code>release notes</code></a> for more details. Note that you are not limited to the top level <code>internal</code> directory. You can have more than one <code>internal</code> directory at any level of your project tree.</p>
+<p>You can optionally add a bit of extra structure to your internal packages to separate your shared and non-shared internal code. It's not required (especially for smaller projects), but it's nice to have visual clues showing the intended package use. Your actual application code can go in the <code>/internal/app</code> directory (e.g., <code>/internal/app/myapp</code>) and the code shared by those apps in the <code>/internal/pkg</code> directory (e.g., <code>/internal/pkg/myprivlib</code>).</p>
+<h3 id="pkg"><code>/pkg</code></h3>
+<p>Library code that's ok to use by external applications (e.g., <code>/pkg/mypubliclib</code>). Other projects will import these libraries expecting them to work, so think twice before you put something here :-) Note that the <code>internal</code> directory is a better way to ensure your private packages are not importable because it's enforced by Go. The <code>/pkg</code> directory is still a good way to explicitly communicate that the code in that directory is safe for use by others. The <a href="https://travisjeffery.com/b/2019/11/i-ll-take-pkg-over-internal/"><code>I'll take pkg over internal</code></a> blog post by Travis Jeffery provides a good overview of the <code>pkg</code> and <code>internal</code> directories and when it might make sense to use them.</p>
+<p>It's also a way to group Go code in one place when your root directory contains lots of non-Go components and directories making it easier to run various Go tools (as mentioned in these talks: <a href="https://www.youtube.com/watch?v=PTE4VJIdHPg"><code>Best Practices for Industrial Programming</code></a> from GopherCon EU 2018, <a href="https://www.youtube.com/watch?v=oL6JBUk6tj0">GopherCon 2018: Kat Zien - How Do You Structure Your Go Apps</a> and <a href="https://www.youtube.com/watch?v=3gQa1LWwuzk">GoLab 2018 - Massimiliano Pippi - Project layout patterns in Go</a>).</p>
+<p>See the <a href="pkg/README.md"><code>/pkg</code></a> directory if you want to see which popular Go repos use this project layout pattern. This is a common layout pattern, but it's not universally accepted and some in the Go community don't recommend it.</p>
+<p>Ok not to use it if your app project is really small and where an extra level of nesting doesn't add much value (unless you really want to :-)). Think about it when it's getting big enough and your root directory gets pretty busy (especially if you have a lot of non-Go app components).</p>
+<h3 id="vendor"><code>/vendor</code></h3>
+<p>Application dependencies (managed manually or by your favorite dependency management tool like the new built-in, but still experimental, <a href="https://github.com/golang/go/wiki/Modules"><code>modules</code></a> feature).</p>
+<p>Don't commit your application dependencies if you are building a library.</p>
+<p>Note that since <a href="https://golang.org/doc/go1.13#modules"><code>1.13</code></a> Go also enabled the module proxy feature (using <a href="https://proxy.golang.org"><code>https://proxy.golang.org</code></a> as their module proxy server by default). Read more about it <a href="https://blog.golang.org/module-mirror-launch"><code>here</code></a> to see if it fits all of your requirements and constraints. If it does, then you won't need the <code>vendor</code> directory at all.</p>
+<h2 id="service-application-directories">Service Application Directories</h2>
+<h3 id="api"><code>/api</code></h3>
+<p>OpenAPI/Swagger specs, JSON schema files, protocol definition files.</p>
+<p>See the <a href="api/README.md"><code>/api</code></a> directory for examples.</p>
+<h2 id="web-application-directories">Web Application Directories</h2>
+<h3 id="web"><code>/web</code></h3>
+<p>Web application specific components: static web assets, server side templates and SPAs.</p>
+<h2 id="common-application-directories">Common Application Directories</h2>
+<h3 id="configs"><code>/configs</code></h3>
+<p>Configuration file templates or default configs.</p>
+<p>Put your <code>confd</code> or <code>consul-template</code> template files here.</p>
+<h3 id="init"><code>/init</code></h3>
+<p>System init (systemd, upstart, sysv) and process manager/supervisor (runit, supervisord) configs.</p>
+<h3 id="scripts"><code>/scripts</code></h3>
+<p>Scripts to perform various build, install, analysis, etc operations.</p>
+<p>These scripts keep the root level Makefile small and simple (e.g., <a href="https://github.com/hashicorp/terraform/blob/master/Makefile"><code>https://github.com/hashicorp/terraform/blob/master/Makefile</code></a>).</p>
+<p>See the <a href="scripts/README.md"><code>/scripts</code></a> directory for examples.</p>
+<h3 id="build"><code>/build</code></h3>
+<p>Packaging and Continuous Integration.</p>
+<p>Put your cloud (AMI), container (Docker), OS (deb, rpm, pkg) package configurations and scripts in the <code>/build/package</code> directory.</p>
+<p>Put your CI (travis, circle, drone) configurations and scripts in the <code>/build/ci</code> directory. Note that some of the CI tools (e.g., Travis CI) are very picky about the location of their config files. Try putting the config files in the <code>/build/ci</code> directory linking them to the location where the CI tools expect them (when possible).</p>
+<h3 id="deployments"><code>/deployments</code></h3>
+<p>IaaS, PaaS, system and container orchestration deployment configurations and templates (docker-compose, kubernetes/helm, mesos, terraform, bosh).</p>
+<h3 id="test"><code>/test</code></h3>
+<p>Additional external test apps and test data. Feel free to structure the <code>/test</code> directory anyway you want. For bigger projects it makes sense to have a data subdirectory. For example, you can have <code>/test/data</code> or <code>/test/testdata</code> if you need Go to ignore what's in that directory. Note that Go will also ignore directories or files that begin with &quot;.&quot; or &quot;_&quot;, so you have more flexibility in terms of how you name your test data directory.</p>
+<p>See the <a href="test/README.md"><code>/test</code></a> directory for examples.</p>
+<h2 id="other-directories">Other Directories</h2>
+<h3 id="docs"><code>/docs</code></h3>
+<p>Design and user documents (in addition to your godoc generated documentation).</p>
+<p>See the <a href="docs/README.md"><code>/docs</code></a> directory for examples.</p>
+<h3 id="tools"><code>/tools</code></h3>
+<p>Supporting tools for this project. Note that these tools can import code from the <code>/pkg</code> and <code>/internal</code> directories.</p>
+<p>See the <a href="tools/README.md"><code>/tools</code></a> directory for examples.</p>
+<h3 id="examples"><code>/examples</code></h3>
+<p>Examples for your applications and/or public libraries.</p>
+<p>See the <a href="examples/README.md"><code>/examples</code></a> directory for examples.</p>
+<h3 id="third_party"><code>/third_party</code></h3>
+<p>External helper tools, forked code and other 3rd party utilities (e.g., Swagger UI).</p>
+<h3 id="githooks"><code>/githooks</code></h3>
+<p>Git hooks.</p>
+<h3 id="assets"><code>/assets</code></h3>
+<p>Other assets to go along with your repository (images, logos, etc).</p>
+<h3 id="website"><code>/website</code></h3>
+<p>This is the place to put your project's website data if you are not using Github pages.</p>
+<p>See the <a href="website/README.md"><code>/website</code></a> directory for examples.</p>
+<h2 id="directories-you-shouldnt-have">Directories You Shouldn't Have</h2>
+<h3 id="src"><code>/src</code></h3>
+<p>Some Go projects do have a <code>src</code> folder, but it usually happens when the devs came from the Java world where it's a common pattern. If you can help yourself try not to adopt this Java pattern. You really don't want your Go code or Go projects to look like Java :-)</p>
+<p>Don't confuse the project level <code>/src</code> directory with the <code>/src</code> directory Go uses for its workspaces as described in <a href="https://golang.org/doc/code.html"><code>How to Write Go Code</code></a>. The <code>$GOPATH</code> environment variable points to your (current) workspace (by default it points to <code>$HOME/go</code> on non-windows systems). This workspace includes the top level <code>/pkg</code>, <code>/bin</code> and <code>/src</code> directories. Your actual project ends up being a sub-directory under <code>/src</code>, so if you have the <code>/src</code> directory in your project the project path will look like this: <code>/some/path/to/workspace/src/your_project/src/your_code.go</code>. Note that with Go 1.11 it's possible to have your project outside of your <code>GOPATH</code>, but it still doesn't mean it's a good idea to use this layout pattern.</p>
+]]></description>
+                
+                
+                
+                
+                
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://code.saltfish.fun/en-us/categories/go-project/">go project</category>
+                                
+                            
+                        
+                    
+                        
+                            
+                                
+                                
+                                
+                                    <category domain="https://code.saltfish.fun/en-us/tags/go/">go</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://code.saltfish.fun/en-us/tags/golang/">golang</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://code.saltfish.fun/en-us/tags/layout/">layout</category>
+                                
+                            
+                        
+                    
+                
+            </item>
+        
+    </channel>
+</rss>
