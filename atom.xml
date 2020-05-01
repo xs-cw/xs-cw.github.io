@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
     <title type="text">life worth</title>
     <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-04-25T21:41:38+08:00</updated>
+    <updated>2020-05-01T12:36:44+08:00</updated>
     <id>https://code.saltfish.fun/</id>
     <link rel="alternate" type="text/html" href="https://code.saltfish.fun/" />
     <link rel="self" type="application/atom+xml" href="https://code.saltfish.fun/atom.xml" />
@@ -15,7 +15,7 @@
                 <email>s4ltfish@gmail.com</email>
             </author>
     <rights>转载标明出处</rights>
-    <generator uri="https://gohugo.io/" version="0.65.3">Hugo</generator>
+    <generator uri="https://gohugo.io/" version="0.69.2">Hugo</generator>
         <entry>
             <title type="text">Questions</title>
             <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/questions/" />
@@ -1039,7 +1039,7 @@ Ubuntu下没有<code>/etc/DIR_COLORS</code>,所以需要以下操作</p>
             <title type="text">WSL与vscode安装</title>
             <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-install/" />
             <id>https://code.saltfish.fun/posts/wsl-install/</id>
-            <updated>2020-03-12T17:24:21+08:00</updated>
+            <updated>2020-05-01T12:36:04+08:00</updated>
             <published>2020-03-11T15:34:29+08:00</published>
             <author>
                     <name>saltfish</name>
@@ -1066,8 +1066,8 @@ Ubuntu下没有<code>/etc/DIR_COLORS</code>,所以需要以下操作</p>
 </div></li>
 <li>
 <h4 id="使用-lxrunoffline-安装-wsl">使用 LxRunOffline 安装 WSL</h4>
-<p>下载解压 <a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL0REb1NvbGl0YXJ5L0x4UnVuT2ZmbGluZS9yZWxlYXNlcw==">LxRunOffline</a> ，并设置环境变量以便使用<code>lxrunoffline</code>命令。</p>
-<p>下载 <a href="https://p3terx.com/go/aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvd2luZG93cy93c2wvaW5zdGFsbC1tYW51YWw=">WSL 官方离线包</a>，解压后可得到名为 <code>install.tar.gz</code> 的文件。</p>
+<p>下载解压 <a href="https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html">LxRunOffline</a> ，并设置环境变量以便使用<code>lxrunoffline</code>命令。</p>
+<p>下载 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-manual">WSL 官方离线包</a>，解压后可得到名为 <code>install.tar.gz</code> 的文件。</p>
 <p>输入以下命令进行安装：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">

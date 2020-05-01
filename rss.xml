@@ -10,7 +10,7 @@
         <title>life worth</title>
         <link>https://code.saltfish.fun/</link>
         <description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description>
-        <generator>Hugo 0.65.3 https://gohugo.io/</generator>
+        <generator>Hugo 0.69.2 https://gohugo.io/</generator>
         
             <language>zh-CN</language>
         
@@ -23,7 +23,7 @@
         
             <copyright>转载标明出处</copyright>
         
-        <lastBuildDate>Sat, 25 Apr 2020 21:41:38 +0800</lastBuildDate>
+        <lastBuildDate>Fri, 01 May 2020 12:36:44 +0800</lastBuildDate>
         
             <atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml" />
         
@@ -1048,8 +1048,8 @@ Ubuntu下没有<code>/etc/DIR_COLORS</code>,所以需要以下操作</p>
 </div></li>
 <li>
 <h4 id="使用-lxrunoffline-安装-wsl">使用 LxRunOffline 安装 WSL</h4>
-<p>下载解压 <a href="https://p3terx.com/go/aHR0cHM6Ly9naXRodWIuY29tL0REb1NvbGl0YXJ5L0x4UnVuT2ZmbGluZS9yZWxlYXNlcw==">LxRunOffline</a> ，并设置环境变量以便使用<code>lxrunoffline</code>命令。</p>
-<p>下载 <a href="https://p3terx.com/go/aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vZW4tdXMvd2luZG93cy93c2wvaW5zdGFsbC1tYW51YWw=">WSL 官方离线包</a>，解压后可得到名为 <code>install.tar.gz</code> 的文件。</p>
+<p>下载解压 <a href="https://p3terx.com/archives/manage-wsl-with-lxrunoffline.html">LxRunOffline</a> ，并设置环境变量以便使用<code>lxrunoffline</code>命令。</p>
+<p>下载 <a href="https://docs.microsoft.com/zh-cn/windows/wsl/install-manual">WSL 官方离线包</a>，解压后可得到名为 <code>install.tar.gz</code> 的文件。</p>
 <p>输入以下命令进行安装：</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
