@@ -4,7 +4,7 @@
   
   <url>
     <loc>https://code.saltfish.fun/categories/</loc>
-    <lastmod>2020-05-01T12:36:04+08:00</lastmod>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -18,8 +18,18 @@
   </url>
   
   <url>
+    <loc>https://code.saltfish.fun/tags/docker/</loc>
+    <lastmod>2020-05-05T22:24:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/posts/docker-problems/</loc>
+    <lastmod>2020-05-05T22:24:32+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://code.saltfish.fun/</loc>
-    <lastmod>2020-05-01T12:36:04+08:00</lastmod>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -33,8 +43,23 @@
   </url>
   
   <url>
+    <loc>https://code.saltfish.fun/tags/nginx/</loc>
+    <lastmod>2020-05-05T22:44:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/posts/nginx/</loc>
+    <lastmod>2020-05-05T22:44:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/categories/nginx%E7%BB%8F%E9%AA%8C/</loc>
+    <lastmod>2020-05-05T22:44:51+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://code.saltfish.fun/posts/</loc>
-    <lastmod>2020-05-01T12:36:04+08:00</lastmod>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
@@ -45,6 +70,56 @@
                 hreflang="zh-cn"
                 href="https://code.saltfish.fun/posts/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/tags/</loc>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-us"
+                href="https://code.saltfish.fun/en-us/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="zh-cn"
+                href="https://code.saltfish.fun/tags/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/tags/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/categories/%E5%89%8D%E7%AB%AF/</loc>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/tags/%E5%90%8E%E7%AB%AF/</loc>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/posts/cors/</loc>
+    <lastmod>2020-05-05T22:54:35+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/</loc>
+    <lastmod>2020-05-05T22:44:51+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
+    <lastmod>2020-05-05T22:24:32+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2020-05-05T22:24:32+08:00</lastmod>
   </url>
   
   <url>
@@ -60,21 +135,6 @@
   <url>
     <loc>https://code.saltfish.fun/posts/questions/</loc>
     <lastmod>2020-04-25T21:41:12+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://code.saltfish.fun/tags/</loc>
-    <lastmod>2020-05-01T12:36:04+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-us"
-                href="https://code.saltfish.fun/en-us/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="zh-cn"
-                href="https://code.saltfish.fun/tags/"
-                />
   </url>
   
   <url>
@@ -104,21 +164,6 @@
   
   <url>
     <loc>https://code.saltfish.fun/posts/wsl-problems/</loc>
-    <lastmod>2020-03-12T17:24:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/</loc>
-    <lastmod>2020-03-12T17:24:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/</loc>
-    <lastmod>2020-05-01T12:36:04+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/</loc>
     <lastmod>2020-03-12T17:24:21+08:00</lastmod>
   </url>
   
