@@ -1,37 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN">
-    <title type="text">life worth</title>
-    <subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle>
-    <updated>2020-05-05T23:23:42+08:00</updated>
-    <id>https://code.saltfish.fun/</id>
-    <link rel="alternate" type="text/html" href="https://code.saltfish.fun/" />
-    <link rel="self" type="application/atom+xml" href="https://code.saltfish.fun/atom.xml" />
-    <author>
-            <name>saltfish</name>
-            <uri>https://code.saltfish.fun/</uri>
-            
-                <email>s4ltfish@gmail.com</email>
-            </author>
-    <rights>转载标明出处</rights>
-    <generator uri="https://gohugo.io/" version="0.69.2">Hugo</generator>
-        <entry>
-            <title type="text">Docker相关问题</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/docker-problems/" />
-            <id>https://code.saltfish.fun/posts/docker-problems/</id>
-            <updated>2020-05-05T22:24:32+08:00</updated>
-            <published>2020-05-05T22:05:31+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[docker for windows 启动kubernets问题 现象: docker desktop 启用kubernets后,一直处于star……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><title type="text">life worth</title><subtitle type="html">MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</subtitle><updated>2020-05-30T05:55:01+00:00</updated><id>https://code.saltfish.fun/</id><link rel="alternate" type="text/html" href="https://code.saltfish.fun/"/><link rel="self" type="application/atom+xml" href="https://code.saltfish.fun/atom.xml"/><author><name>saltfish</name><uri>https://code.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><generator uri="https://gohugo.io/" version="0.71.1">Hugo</generator><entry><title type="text">Docker相关问题</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/docker-problems/"/><id>https://code.saltfish.fun/posts/docker-problems/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-05-05T22:05:31+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">docker for windows 启动kubernets问题 现象: docker desktop 启用kubernets后,一直处于star……</summary><content type="html"><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
 <ul>
 <li>现象:</li>
 </ul>
@@ -61,64 +28,7 @@
 <ul>
 <li>新版docker中<code>host.docker.internal</code>代表宿主机,可以直接使用</li>
 </ul>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/" term="问题" label="问题" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/docker/" term="docker" label="docker" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">git相关</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/git/" />
-            <id>https://code.saltfish.fun/posts/git/</id>
-            <updated>2020-05-05T23:22:44+08:00</updated>
-            <published>2020-05-05T22:05:31+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[git添加多个远程 1 2 3 4 5 6 # 添加远端, 一次push到多个仓库 git remote set-url --add origin https://github.com/example/test.git # 查看远……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="git添加多个远程">git添加多个远程</h3>
+]]></content><category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用"/><category scheme="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/" term="问题" label="问题"/><category scheme="https://code.saltfish.fun/tags/docker/" term="docker" label="docker"/><category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑"/></entry><entry><title type="text">git相关</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/git/"/><id>https://code.saltfish.fun/posts/git/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-05-05T22:05:31+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">git添加多个远程 1 2 3 4 5 6 # 添加远端, 一次push到多个仓库 git remote set-url --add origin https://github.com/example/test.git # 查看远……</summary><content type="html"><![CDATA[<h3 id="git添加多个远程">git添加多个远程</h3>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre class="chroma"><code><span class="lnt">1
@@ -137,52 +47,18 @@ git remote -v
 git remote set-url --add other https://other.test.com/zxbetter/test.git
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/git/" term="git" label="git" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/git/" term="git" label="git" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">nginx相关</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/nginx/" />
-            <id>https://code.saltfish.fun/posts/nginx/</id>
-            <updated>2020-05-05T22:44:51+08:00</updated>
-            <published>2020-05-05T22:05:31+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[使用docker nginx代理前端,避免跨域问题 使用dokcer-compose 启动……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="使用docker-nginx代理前端避免跨域问题">使用docker nginx代理前端,避免跨域问题</h3>
+</div><h3 id="git-贮藏">git 贮藏</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-bash" data-lang="bash">git stash save <span class="s2">&#34;stash info&#34;</span>
+git stash pop
+</code></pre></td></tr></table>
+</div>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/git/" term="git" label="git"/><category scheme="https://code.saltfish.fun/tags/git/" term="git" label="git"/></entry><entry><title type="text">nginx相关</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/nginx/"/><id>https://code.saltfish.fun/posts/nginx/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-05-05T22:05:31+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">使用docker nginx代理前端,避免跨域问题 使用dokcer-compose 启动……</summary><content type="html"><![CDATA[<h3 id="使用docker-nginx代理前端避免跨域问题">使用docker nginx代理前端,避免跨域问题</h3>
 <ul>
 <li>使用dokcer-compose 启动nginx<br>
 <code>docker-compose.yml</code>配置:
@@ -263,58 +139,7 @@ git remote set-url --add other https://other.test.com/zxbetter/test.git
 </div>
 </div></li>
 </ul>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/nginx%E7%BB%8F%E9%AA%8C/" term="nginx经验" label="nginx经验" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/nginx/" term="nginx" label="nginx" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">跨域问题</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/cors/" />
-            <id>https://code.saltfish.fun/posts/cors/</id>
-            <updated>2020-05-05T22:54:35+08:00</updated>
-            <published>2020-05-05T22:05:31+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[前端项目跨域问题 问题: 前端请求与页面地址不在同一域内. sechma://host:p……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="前端项目跨域问题">前端项目跨域问题</h3>
+]]></content><category scheme="https://code.saltfish.fun/categories/nginx%E7%BB%8F%E9%AA%8C/" term="nginx经验" label="nginx经验"/><category scheme="https://code.saltfish.fun/tags/nginx/" term="nginx" label="nginx"/><category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑"/></entry><entry><title type="text">跨域问题</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/cors/"/><id>https://code.saltfish.fun/posts/cors/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-05-05T22:05:31+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">前端项目跨域问题 问题: 前端请求与页面地址不在同一域内. sechma://host:p……</summary><content type="html"><![CDATA[<h3 id="前端项目跨域问题">前端项目跨域问题</h3>
 <ul>
 <li>问题:
 前端请求与页面地址不在同一域内.<br>
@@ -414,58 +239,7 @@ nginx配置如下:</li>
    <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E5%89%8D%E7%AB%AF/" term="前端" label="前端" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E5%89%8D%E7%AB%AF/" term="前端" label="前端" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E5%90%8E%E7%AB%AF/" term="后端" label="后端" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Questions</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/questions/" />
-            <id>https://code.saltfish.fun/posts/questions/</id>
-            <updated>2020-04-25T21:41:12+08:00</updated>
-            <published>2020-04-07T10:42:49+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[乐观锁悲观锁 https://juejin.im/post/5b4977ae5188251b146b2fc8 docker相关 docker实现原理:linux namespace技术……]]></summary>
-            
-                <content type="html"><![CDATA[<ol>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/%E5%89%8D%E7%AB%AF/" term="前端" label="前端"/><category scheme="https://code.saltfish.fun/tags/%E5%89%8D%E7%AB%AF/" term="前端" label="前端"/><category scheme="https://code.saltfish.fun/tags/%E5%90%8E%E7%AB%AF/" term="后端" label="后端"/></entry><entry><title type="text">Questions</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/questions/"/><id>https://code.saltfish.fun/posts/questions/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-04-07T10:42:49+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">乐观锁悲观锁 https://juejin.im/post/5b4977ae5188251b146b2fc8 docker相关 docker实现原理:linux namespace技术……</summary><content type="html"><![CDATA[<ol>
 <li>
 <h3 id="乐观锁悲观锁">乐观锁悲观锁</h3>
 <ul>
@@ -995,52 +769,7 @@ nginx配置如下:</li>
 </ul>
 </li>
 </ol>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/question/" term="question" label="question" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/question/" term="question" label="question" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Leetcode63</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode63/" />
-            <id>https://code.saltfish.fun/posts/leetcode63/</id>
-            <updated>2020-04-07T10:52:19+08:00</updated>
-            <published>2020-04-04T12:01:40+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[面试题63. 股票的最大利润 难度中等11收藏分享切换为英文关注反馈 假设把某股票的价格按……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="面试题63-股票的最大利润">面试题63. 股票的最大利润</h3>
+]]></content><category scheme="https://code.saltfish.fun/categories/question/" term="question" label="question"/><category scheme="https://code.saltfish.fun/tags/question/" term="question" label="question"/></entry><entry><title type="text">Leetcode63</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode63/"/><id>https://code.saltfish.fun/posts/leetcode63/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-04-04T12:01:40+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">面试题63. 股票的最大利润 难度中等11收藏分享切换为英文关注反馈 假设把某股票的价格按……</summary><content type="html"><![CDATA[<h3 id="面试题63-股票的最大利润">面试题63. 股票的最大利润</h3>
 <p>难度中等11收藏分享切换为英文关注反馈</p>
 <p>假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？</p>
 <p><strong>示例 1:</strong></p>
@@ -1109,36 +838,7 @@ nginx配置如下:</li>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Leetcode1162</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode1162/" />
-            <id>https://code.saltfish.fun/posts/leetcode1162/</id>
-            <updated>2020-04-04T18:05:38+08:00</updated>
-            <published>2020-04-04T00:43:32+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[1162. 地图分析 你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="1162-地图分析">1162. 地图分析</h3>
+</div>]]></content></entry><entry><title type="text">Leetcode1162</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode1162/"/><id>https://code.saltfish.fun/posts/leetcode1162/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-04-04T00:43:32+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">1162. 地图分析 你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」……</summary><content type="html"><![CDATA[<h3 id="1162-地图分析">1162. 地图分析</h3>
 <p>你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」（单元格）都用 0 和 1 标记好了。其中 0 代表海洋，1 代表陆地，请你找出一个海洋区域，这个海洋区域到离它最近的陆地区域的距离是最大的。</p>
 <p>我们这里说的距离是「曼哈顿距离」（ Manhattan Distance）：(x0, y0) 和 (x1, y1) 这两个区域之间的距离是 |x0 - x1| + |y0 - y1| 。</p>
 <p>如果我们的地图上只有陆地或者海洋，请返回 -1。</p>
@@ -1236,52 +936,7 @@ nginx配置如下:</li>
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">WSL踩坑</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-problems/" />
-            <id>https://code.saltfish.fun/posts/wsl-problems/</id>
-            <updated>2020-03-12T17:24:21+08:00</updated>
-            <published>2020-03-11T19:29:24+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[wsl ubuntu 更新中断 更新中断后部分软件安装会报错,可以先将/var/lib/dpkg/inf……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="wsl-ubuntu-更新中断">wsl ubuntu 更新中断</h3>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode"/><category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode"/></entry><entry><title type="text">WSL踩坑</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-problems/"/><id>https://code.saltfish.fun/posts/wsl-problems/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-11T19:29:24+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">wsl ubuntu 更新中断 更新中断后部分软件安装会报错,可以先将/var/lib/dpkg/inf……</summary><content type="html"><![CDATA[<h3 id="wsl-ubuntu-更新中断">wsl ubuntu 更新中断</h3>
 <p>更新中断后部分软件安装会报错,可以先将<code>/var/lib/dpkg/info</code>目录下对应的文件备份
 然后再重新更新.</p>
 <div class="highlight"><div class="chroma">
@@ -1292,64 +947,7 @@ nginx配置如下:</li>
 <pre class="chroma"><code class="language-bash" data-lang="bash">sudo mv /var/lib/dpkg/info/<span class="o">{</span>pkg<span class="o">}</span>.postinst /var/lib/dpkg/info/<span class="o">{</span>pkg<span class="o">}</span>.postinst.bak
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/" term="问题" label="问题" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">WSL下oh-my-zsh安装</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-zsh/" />
-            <id>https://code.saltfish.fun/posts/wsl-zsh/</id>
-            <updated>2020-03-13T13:57:17+08:00</updated>
-            <published>2020-03-11T16:44:40+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[安装ZSH 以Ubuntu为例,安装步骤 1 2 3 4 5 # 安装zsh sudo apt-get install zsh # 安装oh-my……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="安装zsh">安装ZSH</h3>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用"/><category scheme="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/" term="问题" label="问题"/><category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl"/><category scheme="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/" term="踩坑" label="踩坑"/></entry><entry><title type="text">WSL下oh-my-zsh安装</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-zsh/"/><id>https://code.saltfish.fun/posts/wsl-zsh/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-11T16:44:40+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">安装ZSH 以Ubuntu为例,安装步骤 1 2 3 4 5 # 安装zsh sudo apt-get install zsh # 安装oh-my……</summary><content type="html"><![CDATA[<h3 id="安装zsh">安装ZSH</h3>
 <ul>
 <li>以Ubuntu为例,安装步骤</li>
 </ul>
@@ -1427,64 +1025,7 @@ Ubuntu下没有<code>/etc/DIR_COLORS</code>,所以需要以下操作</p>
 45 - 洋红色
 46 - 蓝绿色
 47 - 白色
-</code></pre>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/oh-my-zsh/" term="oh-my-zsh" label="oh-my-zsh" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">WSL与vscode安装</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-install/" />
-            <id>https://code.saltfish.fun/posts/wsl-install/</id>
-            <updated>2020-05-01T12:36:04+08:00</updated>
-            <published>2020-03-11T15:34:29+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[安装WSL 启用WSL 以管理员身份运行 Pow­er­Shell (WIN+X)，输入下面……]]></summary>
-            
-                <content type="html"><![CDATA[<h3 id="安装wsl">安装WSL</h3>
+</code></pre>]]></content><category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用"/><category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境"/><category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl"/><category scheme="https://code.saltfish.fun/tags/oh-my-zsh/" term="oh-my-zsh" label="oh-my-zsh"/></entry><entry><title type="text">WSL与vscode安装</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/wsl-install/"/><id>https://code.saltfish.fun/posts/wsl-install/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-11T15:34:29+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">安装WSL 启用WSL 以管理员身份运行 Pow­er­Shell (WIN+X)，输入下面……</summary><content type="html"><![CDATA[<h3 id="安装wsl">安装WSL</h3>
 <ul>
 <li>
 <h4 id="启用wsl">启用WSL</h4>
@@ -1576,70 +1117,7 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 </ul>
 </li>
 </ul>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/vscode/" term="vscode" label="vscode" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/lxrunoffline/" term="LxRunOffline" label="LxRunOffline" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Leetcode986</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode986/" />
-            <id>https://code.saltfish.fun/posts/leetcode986/</id>
-            <updated>2020-03-08T15:20:54+08:00</updated>
-            <published>2020-03-08T14:45:17+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[986. 区间列表的交集 给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已……]]></summary>
-            
-                <content type="html"><![CDATA[<h2 id="986-区间列表的交集">986. 区间列表的交集</h2>
+]]></content><category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用"/><category scheme="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/" term="开发环境" label="开发环境"/><category scheme="https://code.saltfish.fun/tags/wsl/" term="wsl" label="wsl"/><category scheme="https://code.saltfish.fun/tags/vscode/" term="vscode" label="vscode"/><category scheme="https://code.saltfish.fun/tags/lxrunoffline/" term="LxRunOffline" label="LxRunOffline"/></entry><entry><title type="text">Leetcode986</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode986/"/><id>https://code.saltfish.fun/posts/leetcode986/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-08T14:45:17+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">986. 区间列表的交集 给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已……</summary><content type="html"><![CDATA[<h2 id="986-区间列表的交集">986. 区间列表的交集</h2>
 <p>给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已经排序。</p>
 <p>返回这两个区间列表的交集。</p>
 <p>（形式上，闭区间 [a, b]（其中 a &lt;= b）表示实数 x 的集合，而 a &lt;= x &lt;= b。两个闭区间的交集是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3]。）</p>
@@ -1725,52 +1203,7 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Leetcode88</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode88/" />
-            <id>https://code.saltfish.fun/posts/leetcode88/</id>
-            <updated>2020-04-25T21:38:59+08:00</updated>
-            <published>2020-03-07T21:30:36+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[88. 合并两个有序数组 给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 num1 成为一……]]></summary>
-            
-                <content type="html"><![CDATA[<h2 id="88-合并两个有序数组">88. 合并两个有序数组</h2>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode"/><category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode"/></entry><entry><title type="text">Leetcode88</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/leetcode88/"/><id>https://code.saltfish.fun/posts/leetcode88/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-07T21:30:36+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">88. 合并两个有序数组 给你两个有序整数数组 nums1 和 nums2，请你将 nums2 合并到 nums1 中，使 num1 成为一……</summary><content type="html"><![CDATA[<h2 id="88-合并两个有序数组">88. 合并两个有序数组</h2>
 <p>给你两个有序整数数组 <code>nums1</code> 和 <code>nums2</code>，请你将 <code>nums2</code> 合并到 <code>nums1</code> 中，使 <code>num1</code> 成为一个有序数组。</p>
 <h3 id="说明">说明:</h3>
 <ul>
@@ -1845,52 +1278,7 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 <span class="p">}</span>
 </code></pre></td></tr></table>
 </div>
-</div>]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Docker-Compose安装出错</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/docker-compose-error/" />
-            <id>https://code.saltfish.fun/posts/docker-compose-error/</id>
-            <updated>2020-03-12T00:36:03+08:00</updated>
-            <published>2020-03-04T21:05:39+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[1、安装docker-compose 首先检查Linux有没有安装Python-pip……]]></summary>
-            
-                <content type="html"><![CDATA[<p><strong>1、安装docker-compose</strong></p>
+</div>]]></content><category scheme="https://code.saltfish.fun/categories/leetcode/" term="leetcode" label="leetcode"/><category scheme="https://code.saltfish.fun/tags/leetcode/" term="leetcode" label="leetcode"/></entry><entry><title type="text">Docker-Compose安装出错</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/docker-compose-error/"/><id>https://code.saltfish.fun/posts/docker-compose-error/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-04T21:05:39+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">1、安装docker-compose 首先检查Linux有没有安装Python-pip……</summary><content type="html"><![CDATA[<p><strong>1、安装docker-compose</strong></p>
 <ol>
 <li>
 <p>首先检查Linux有没有安装Python-pip包，直接执行 <code>yum install python-pip</code></p>
@@ -1975,58 +1363,7 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 </div><p>本文来自<a href="https://www.cnblogs.com">博客园</a></p>
 <p>感谢作者<a href="https://home.cnblogs.com/u/richiewlq/">Richie`</a></p>
 <p>查看原文<a href="https://www.cnblogs.com/richiewlq/p/9203504.html">CentOS7下安装Docker-Compose No module named 'requests.packages.urllib3'</a></p>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/docker/" term="docker" label="docker" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/docker-compose/" term="docker-compose" label="docker-compose" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">系统安装找到启动路径</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/system-find-boot/" />
-            <id>https://code.saltfish.fun/posts/system-find-boot/</id>
-            <updated>2020-03-12T00:36:30+08:00</updated>
-            <published>2020-03-04T21:05:39+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[windows 系统安装启动盘启动时找不到启动路径 找BOOTMGR文件在那个盘符find /bootmgr 这样会在……]]></summary>
-            
-                <content type="html"><![CDATA[<p>windows 系统安装启动盘启动时找不到启动路径</p>
+]]></content><category scheme="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/" term="软件使用" label="软件使用"/><category scheme="https://code.saltfish.fun/categories/docker/" term="docker" label="docker"/><category scheme="https://code.saltfish.fun/tags/docker-compose/" term="docker-compose" label="docker-compose"/></entry><entry><title type="text">系统安装找到启动路径</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/system-find-boot/"/><id>https://code.saltfish.fun/posts/system-find-boot/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-04T21:05:39+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">windows 系统安装启动盘启动时找不到启动路径 找BOOTMGR文件在那个盘符find /bootmgr 这样会在……</summary><content type="html"><![CDATA[<p>windows 系统安装启动盘启动时找不到启动路径</p>
 <ol>
 <li>找BOOTMGR文件在那个盘符<code>find /bootmgr</code></li>
 <li>这样会在所有的磁盘根目录寻找文件，找到文件后接着进入该盘符 <code>root (hd0,0)</code></li>
@@ -2035,58 +1372,7 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 启动
 这样就OK了~！</li>
 </ol>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" term="系统安装" label="系统安装" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-        <entry>
-            <title type="text">Go项目标准结构</title>
-            <link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/go-project-layout/" />
-            <id>https://code.saltfish.fun/posts/go-project-layout/</id>
-            <updated>2020-03-04T14:56:42+08:00</updated>
-            <published>2020-03-02T14:28:16+08:00</published>
-            <author>
-                    <name>saltfish</name>
-                    <uri>https://www.saltfish.fun/</uri>
-                    <email>s4ltfish@gmail.com</email>
-                    </author>
-            <rights>转载标明出处</rights>
-    
-    <summary type="html"><![CDATA[[`project-layout`](https://github.com/golang-standards/project-layout)项目总结了Go 项目的布局,这是Go应用程序项目的基本布局, 并不是Go核心开发团队定义的官方标准， 但是，这是Go生态系统中的一种常见的项目布局模式。]]></summary>
-            
-                <content type="html"><![CDATA[<h2 id="go目录">Go目录</h2>
+]]></content><category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统"/><category scheme="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/" term="系统安装" label="系统安装"/><category scheme="https://code.saltfish.fun/tags/%E7%B3%BB%E7%BB%9F/" term="系统" label="系统"/></entry><entry><title type="text">Go项目标准结构</title><link rel="alternate" type="text/html" href="https://code.saltfish.fun/posts/go-project-layout/"/><id>https://code.saltfish.fun/posts/go-project-layout/</id><updated>2020-05-30T05:54:59+00:00</updated><published>2020-03-02T14:28:16+08:00</published><author><name>saltfish</name><uri>https://www.saltfish.fun/</uri><email>s4ltfish@gmail.com</email></author><rights>转载标明出处</rights><summary type="html">[`project-layout`](https://github.com/golang-standards/project-layout)项目总结了Go 项目的布局,这是Go应用程序项目的基本布局, 并不是Go核心开发团队定义的官方标准， 但是，这是Go生态系统中的一种常见的项目布局模式。</summary><content type="html"><![CDATA[<h2 id="go目录">Go目录</h2>
 <h3 id="cmd"><code>/cmd</code></h3>
 <p>该目录用于存放 Go 项目的入口，即 main.go。一般来说，我们应该在 <code>cmd</code>目录下创建子目录，子目录名称代表可执行程序的名称（例如<code>/cmd/myapp</code>）。上面列出的优秀开源项目基本上遵循了这一规则。
 一般来说，该目录中的代码应该尽可能少。如果认为该代码可以导入并在其他项目中使用，那么它应该位于<code>/pkg</code>目录中。如果该代码不可重用，或者不希望其他人重用它，则将该代码放在<code>/internal</code>目录中。</p>
@@ -2137,46 +1423,4 @@ mklink /D <span class="s2">&#34;C:\Users\{USER}\.vscode\extensions&#34;</span> <
 <h3 id="src"><code>/src</code></h3>
 <p>有些Go项目确实有一个<code>src</code>文件夹，但通常是Java开发人员通用模式。如果可以，请尝试不要采用此Java模式。你真的不希望您的Go代码或Go项目看起来像Java😀</p>
 <p>不要混淆了项目的<code>/src</code>和go语言的<code>GOPATH</code>，如果你的项目里有<code>/src</code>,那么你的项目路径可能就是<code>/some/path/to/workspace/src/your_project/src/your_code.go</code>。go 1.11之后可以将项目放在<code>GOPATH</code>之外的地方，但最好还是不要在项目里使用<code>/src</code>目录</p>
-]]></content>
-            
-            
-            
-            
-            
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/categories/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言" />
-                            
-                        
-                    
-                
-                    
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/go/" term="go" label="go" />
-                            
-                        
-                            
-                            
-                            
-                                <category scheme="https://code.saltfish.fun/tags/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/" term="项目结构" label="项目结构" />
-                            
-                        
-                    
-                
-            
-        </entry>
-    
-</feed>
+]]></content><category scheme="https://code.saltfish.fun/categories/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言"/><category scheme="https://code.saltfish.fun/tags/go%E8%AF%AD%E8%A8%80/" term="go语言" label="go语言"/><category scheme="https://code.saltfish.fun/tags/go/" term="go" label="go"/><category scheme="https://code.saltfish.fun/tags/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/" term="项目结构" label="项目结构"/></entry></feed>
