@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://code.saltfish.fun/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.71.1 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sat, 30 May 2020 05:55:01 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml"/><item><title>Docker相关问题</title><link>https://code.saltfish.fun/posts/docker-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://code.saltfish.fun/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.2 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 20 Jul 2020 09:05:08 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml"/><item><title>Docker相关问题</title><link>https://code.saltfish.fun/posts/docker-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
 <ul>
 <li>现象:</li>
 </ul>
@@ -114,6 +114,8 @@ git stash pop
 </span><span class="lnt">17
 </span><span class="lnt">18
 </span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
 </span></code></pre></td>
 <td class="lntd">
 <pre class="chroma"><code class="language-nginx" data-lang="nginx"><span class="k">server</span> <span class="p">{</span>
@@ -128,6 +130,8 @@ git stash pop
  <span class="p">}</span>
 
  <span class="c1"># 代理后端接口
+</span><span class="c1"></span> <span class="c1"># 原先前端请求地址 http://localhost:9090/server/index
+</span><span class="c1"></span> <span class="c1"># 修改成 http://localhost:9090/api/server/index
 </span><span class="c1"></span> <span class="kn">location</span> <span class="s">/api</span> <span class="p">{</span>
      <span class="c1"># 接口地址修正
 </span><span class="c1"></span>     <span class="kn">rewrite</span> <span class="s">^/api/(.*)</span>$ <span class="s">/</span><span class="nv">$1</span> <span class="s">break</span><span class="p">;</span>
