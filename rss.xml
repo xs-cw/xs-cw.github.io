@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://code.saltfish.fun/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.2 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 20 Jul 2020 09:05:08 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml"/><item><title>Docker相关问题</title><link>https://code.saltfish.fun/posts/docker-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://code.saltfish.fun/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sat, 01 Aug 2020 08:40:49 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml"/><item><title>Docker相关问题</title><link>https://code.saltfish.fun/posts/docker-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description><![CDATA[<h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题</h3>
 <ul>
 <li>现象:</li>
 </ul>
@@ -967,7 +967,7 @@ nginx配置如下:</li>
 <pre class="chroma"><code class="language-bash" data-lang="bash"><span class="c1"># 安装zsh</span>
 sudo apt-get install zsh
 <span class="c1"># 安装oh-my-zsh</span>
-sh -c <span class="s2">&#34;</span><span class="k">$(</span>curl https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
+sh -c <span class="s2">&#34;</span><span class="k">$(</span>wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -<span class="k">)</span><span class="s2">&#34;</span>
 
 </code></pre></td></tr></table>
 </div>
