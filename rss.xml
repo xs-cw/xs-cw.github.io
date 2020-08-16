@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://code.saltfish.fun/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sun, 16 Aug 2020 09:23:31 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://code.saltfish.fun/rss.xml"/><item><title>Docker相关问题</title><link>https://code.saltfish.fun/posts/docker-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sun, 16 Aug 2020 09:26:30 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
 &lt;ul>
 &lt;li>现象:&lt;/li>
 &lt;/ul>
@@ -27,7 +27,7 @@
 &lt;h3 id="docker容器访问宿主机ip">docker容器访问宿主机ip&lt;/h3>
 &lt;ul>
 &lt;li>新版docker中&lt;code>host.docker.internal&lt;/code>代表宿主机,可以直接使用&lt;/li>
-&lt;/ul></description><category domain="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/">问题</category><category domain="https://code.saltfish.fun/tags/docker/">docker</category><category domain="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>git相关</title><link>https://code.saltfish.fun/posts/git/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/git/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="git添加多个远程">git添加多个远程&lt;/h3>
+&lt;/ul></description><category domain="https://xs-cw.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://xs-cw.github.io/categories/%E9%97%AE%E9%A2%98/">问题</category><category domain="https://xs-cw.github.io/tags/docker/">docker</category><category domain="https://xs-cw.github.io/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>git相关</title><link>https://xs-cw.github.io/posts/git/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/git/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="git添加多个远程">git添加多个远程&lt;/h3>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre class="chroma">&lt;code>&lt;span class="lnt">1
@@ -57,7 +57,7 @@ git remote set-url --add other https://other.test.com/zxbetter/test.git
 git stash pop
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/git/">git</category><category domain="https://code.saltfish.fun/tags/git/">git</category></item><item><title>nginx相关</title><link>https://code.saltfish.fun/posts/nginx/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/nginx/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="使用docker-nginx代理前端避免跨域问题">使用docker nginx代理前端,避免跨域问题&lt;/h3>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/git/">git</category><category domain="https://xs-cw.github.io/tags/git/">git</category></item><item><title>nginx相关</title><link>https://xs-cw.github.io/posts/nginx/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/nginx/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="使用docker-nginx代理前端避免跨域问题">使用docker nginx代理前端,避免跨域问题&lt;/h3>
 &lt;ul>
 &lt;li>使用dokcer-compose 启动nginx&lt;br>
 &lt;code>docker-compose.yml&lt;/code>配置:
@@ -139,7 +139,7 @@ git stash pop
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;/li>
-&lt;/ul></description><category domain="https://code.saltfish.fun/categories/nginx%E7%BB%8F%E9%AA%8C/">nginx经验</category><category domain="https://code.saltfish.fun/tags/nginx/">nginx</category><category domain="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>跨域问题</title><link>https://code.saltfish.fun/posts/cors/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/cors/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="前端项目跨域问题">前端项目跨域问题&lt;/h3>
+&lt;/ul></description><category domain="https://xs-cw.github.io/categories/nginx%E7%BB%8F%E9%AA%8C/">nginx经验</category><category domain="https://xs-cw.github.io/tags/nginx/">nginx</category><category domain="https://xs-cw.github.io/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>跨域问题</title><link>https://xs-cw.github.io/posts/cors/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/cors/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="前端项目跨域问题">前端项目跨域问题&lt;/h3>
 &lt;ul>
 &lt;li>问题:
 前端请求与页面地址不在同一域内.&lt;br>
@@ -235,7 +235,7 @@ nginx配置如下:&lt;/li>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://code.saltfish.fun/tags/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://code.saltfish.fun/tags/%E5%90%8E%E7%AB%AF/">后端</category></item><item><title>Questions</title><link>https://code.saltfish.fun/posts/questions/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/questions/</guid><pubDate>Tue, 07 Apr 2020 10:42:49 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;ol>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://xs-cw.github.io/tags/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://xs-cw.github.io/tags/%E5%90%8E%E7%AB%AF/">后端</category></item><item><title>Questions</title><link>https://xs-cw.github.io/posts/questions/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/questions/</guid><pubDate>Tue, 07 Apr 2020 10:42:49 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;ol>
 &lt;li>
 &lt;h3 id="乐观锁悲观锁">乐观锁悲观锁&lt;/h3>
 &lt;ul>
@@ -876,7 +876,7 @@ nginx配置如下:&lt;/li>
 &lt;/div>&lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ol></description><category domain="https://code.saltfish.fun/categories/question/">question</category><category domain="https://code.saltfish.fun/tags/question/">question</category></item><item><title>Leetcode63</title><link>https://code.saltfish.fun/posts/leetcode63/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/leetcode63/</guid><pubDate>Sat, 04 Apr 2020 12:01:40 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="面试题63-股票的最大利润">面试题63. 股票的最大利润&lt;/h3>
+&lt;/ol></description><category domain="https://xs-cw.github.io/categories/question/">question</category><category domain="https://xs-cw.github.io/tags/question/">question</category></item><item><title>Leetcode63</title><link>https://xs-cw.github.io/posts/leetcode63/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/leetcode63/</guid><pubDate>Sat, 04 Apr 2020 12:01:40 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="面试题63-股票的最大利润">面试题63. 股票的最大利润&lt;/h3>
 &lt;p>难度中等11收藏分享切换为英文关注反馈&lt;/p>
 &lt;p>假设把某股票的价格按照时间先后顺序存储在数组中，请问买卖该股票一次可能获得的最大利润是多少？&lt;/p>
 &lt;p>&lt;strong>示例 1:&lt;/strong>&lt;/p>
@@ -945,18 +945,18 @@ nginx配置如下:&lt;/li>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Leetcode1162</title><link>https://code.saltfish.fun/posts/leetcode1162/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/leetcode1162/</guid><pubDate>Sat, 04 Apr 2020 00:43:32 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="1162-地图分析">1162. 地图分析&lt;/h3>
+&lt;/div></description></item><item><title>Leetcode1162</title><link>https://xs-cw.github.io/posts/leetcode1162/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/leetcode1162/</guid><pubDate>Sat, 04 Apr 2020 00:43:32 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="1162-地图分析">1162. 地图分析&lt;/h3>
 &lt;p>你现在手里有一份大小为 N x N 的「地图」（网格） grid，上面的每个「区域」（单元格）都用 0 和 1 标记好了。其中 0 代表海洋，1 代表陆地，请你找出一个海洋区域，这个海洋区域到离它最近的陆地区域的距离是最大的。&lt;/p>
 &lt;p>我们这里说的距离是「曼哈顿距离」（ Manhattan Distance）：(x0, y0) 和 (x1, y1) 这两个区域之间的距离是 |x0 - x1| + |y0 - y1| 。&lt;/p>
 &lt;p>如果我们的地图上只有陆地或者海洋，请返回 -1。&lt;/p>
 &lt;p>示例1:&lt;/p>
-&lt;p>&lt;img src="https://code.saltfish.fun/img/1336_ex1.jpeg" alt="img">&lt;/p>
+&lt;p>&lt;img src="https://xs-cw.github.io/img/1336_ex1.jpeg" alt="img">&lt;/p>
 &lt;pre>&lt;code>输入：[[1,0,1],[0,0,0],[1,0,1]]
 输出：2
 解释：
 海洋区域 (1, 1) 和所有陆地区域之间的距离都达到最大，最大距离为 2。
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>示例 2：&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://code.saltfish.fun/img/1336_ex1.jpeg" alt="img">&lt;/p>
+&lt;p>&lt;img src="https://xs-cw.github.io/img/1336_ex1.jpeg" alt="img">&lt;/p>
 &lt;pre>&lt;code>输入：[[1,0,0],[0,0,0],[0,0,0]]
 输出：4
 解释：
@@ -1043,7 +1043,7 @@ nginx配置如下:&lt;/li>
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/leetcode/">leetcode</category><category domain="https://code.saltfish.fun/tags/leetcode/">leetcode</category></item><item><title>WSL踩坑</title><link>https://code.saltfish.fun/posts/wsl-problems/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/wsl-problems/</guid><pubDate>Wed, 11 Mar 2020 19:29:24 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="wsl-ubuntu-更新中断">wsl ubuntu 更新中断&lt;/h3>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/leetcode/">leetcode</category><category domain="https://xs-cw.github.io/tags/leetcode/">leetcode</category></item><item><title>WSL踩坑</title><link>https://xs-cw.github.io/posts/wsl-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/wsl-problems/</guid><pubDate>Wed, 11 Mar 2020 19:29:24 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="wsl-ubuntu-更新中断">wsl ubuntu 更新中断&lt;/h3>
 &lt;p>更新中断后部分软件安装会报错,可以先将&lt;code>/var/lib/dpkg/info&lt;/code>目录下对应的文件备份
 然后再重新更新.&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -1054,7 +1054,7 @@ nginx配置如下:&lt;/li>
 &lt;pre class="chroma">&lt;code class="language-bash" data-lang="bash">sudo mv /var/lib/dpkg/info/&lt;span class="o">{&lt;/span>pkg&lt;span class="o">}&lt;/span>.postinst /var/lib/dpkg/info/&lt;span class="o">{&lt;/span>pkg&lt;span class="o">}&lt;/span>.postinst.bak
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://code.saltfish.fun/categories/%E9%97%AE%E9%A2%98/">问题</category><category domain="https://code.saltfish.fun/tags/wsl/">wsl</category><category domain="https://code.saltfish.fun/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>WSL下oh-my-zsh安装</title><link>https://code.saltfish.fun/posts/wsl-zsh/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/wsl-zsh/</guid><pubDate>Wed, 11 Mar 2020 16:44:40 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="安装zsh">安装ZSH&lt;/h3>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://xs-cw.github.io/categories/%E9%97%AE%E9%A2%98/">问题</category><category domain="https://xs-cw.github.io/tags/wsl/">wsl</category><category domain="https://xs-cw.github.io/tags/%E8%B8%A9%E5%9D%91/">踩坑</category></item><item><title>WSL下oh-my-zsh安装</title><link>https://xs-cw.github.io/posts/wsl-zsh/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/wsl-zsh/</guid><pubDate>Wed, 11 Mar 2020 16:44:40 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="安装zsh">安装ZSH&lt;/h3>
 &lt;ul>
 &lt;li>以Ubuntu为例,安装步骤&lt;/li>
 &lt;/ul>
@@ -1099,7 +1099,7 @@ Ubuntu下没有&lt;code>/etc/DIR_COLORS&lt;/code>,所以需要以下操作&lt;/p
 &lt;/div>
 &lt;/div>&lt;p>找到如下一行,修改对应颜色&lt;/p>
 &lt;pre>&lt;code>OTHER_WRITABLE 34;42 # dir that is other-writable (o+w) and not sticky
-&lt;/code>&lt;/pre>&lt;p>例如改为黑色字体红色背景,颜色与背景&lt;a href="https://code.saltfish.fun/posts/wsl-zsh/#style">参考样式&lt;/a>&lt;/p>
+&lt;/code>&lt;/pre>&lt;p>例如改为黑色字体红色背景,颜色与背景&lt;a href="https://xs-cw.github.io/posts/wsl-zsh/#style">参考样式&lt;/a>&lt;/p>
 &lt;pre>&lt;code>OTHER_WRITABLE 30;41 # dir that is other-writable (o+w) and not sticky
 &lt;/code>&lt;/pre>&lt;p>让修改后的文件生效,将下面的代码添加到&lt;code>~/.zshrc&lt;/code>&lt;/p>
 &lt;pre>&lt;code>eval &amp;quot;$(dircolors ~/.dircolors)&amp;quot;;
@@ -1131,7 +1131,7 @@ Ubuntu下没有&lt;code>/etc/DIR_COLORS&lt;/code>,所以需要以下操作&lt;/p
 45 - 洋红色
 46 - 蓝绿色
 47 - 白色
-&lt;/code>&lt;/pre></description><category domain="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</category><category domain="https://code.saltfish.fun/tags/wsl/">wsl</category><category domain="https://code.saltfish.fun/tags/oh-my-zsh/">oh-my-zsh</category></item><item><title>WSL与vscode安装</title><link>https://code.saltfish.fun/posts/wsl-install/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/wsl-install/</guid><pubDate>Wed, 11 Mar 2020 15:34:29 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="安装wsl">安装WSL&lt;/h3>
+&lt;/code>&lt;/pre></description><category domain="https://xs-cw.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://xs-cw.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</category><category domain="https://xs-cw.github.io/tags/wsl/">wsl</category><category domain="https://xs-cw.github.io/tags/oh-my-zsh/">oh-my-zsh</category></item><item><title>WSL与vscode安装</title><link>https://xs-cw.github.io/posts/wsl-install/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/wsl-install/</guid><pubDate>Wed, 11 Mar 2020 15:34:29 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="安装wsl">安装WSL&lt;/h3>
 &lt;ul>
 &lt;li>
 &lt;h4 id="启用wsl">启用WSL&lt;/h4>
@@ -1222,12 +1222,12 @@ mklink /D &lt;span class="s2">&amp;#34;C:\Users\{USER}\.vscode\extensions&amp;#3
 &lt;/li>
 &lt;/ul>
 &lt;/li>
-&lt;/ul></description><category domain="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://code.saltfish.fun/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</category><category domain="https://code.saltfish.fun/tags/wsl/">wsl</category><category domain="https://code.saltfish.fun/tags/vscode/">vscode</category><category domain="https://code.saltfish.fun/tags/lxrunoffline/">LxRunOffline</category></item><item><title>Leetcode986</title><link>https://code.saltfish.fun/posts/leetcode986/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/leetcode986/</guid><pubDate>Sun, 08 Mar 2020 14:45:17 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="986-区间列表的交集">986. 区间列表的交集&lt;/h2>
+&lt;/ul></description><category domain="https://xs-cw.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://xs-cw.github.io/categories/%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83/">开发环境</category><category domain="https://xs-cw.github.io/tags/wsl/">wsl</category><category domain="https://xs-cw.github.io/tags/vscode/">vscode</category><category domain="https://xs-cw.github.io/tags/lxrunoffline/">LxRunOffline</category></item><item><title>Leetcode986</title><link>https://xs-cw.github.io/posts/leetcode986/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/leetcode986/</guid><pubDate>Sun, 08 Mar 2020 14:45:17 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="986-区间列表的交集">986. 区间列表的交集&lt;/h2>
 &lt;p>给定两个由一些闭区间组成的列表，每个区间列表都是成对不相交的，并且已经排序。&lt;/p>
 &lt;p>返回这两个区间列表的交集。&lt;/p>
 &lt;p>（形式上，闭区间 [a, b]（其中 a &amp;lt;= b）表示实数 x 的集合，而 a &amp;lt;= x &amp;lt;= b。两个闭区间的交集是一组实数，要么为空集，要么为闭区间。例如，[1, 3] 和 [2, 4] 的交集为 [2, 3]。）&lt;/p>
 &lt;p>&lt;strong>示例：&lt;/strong>&lt;/p>
-&lt;p>&lt;img src="https://code.saltfish.fun/img/interval1.png" alt="img">&lt;/p>
+&lt;p>&lt;img src="https://xs-cw.github.io/img/interval1.png" alt="img">&lt;/p>
 &lt;blockquote>
 &lt;p>输入：A = [[0,2],[5,10],[13,23],[24,25]], B = [[1,5],[8,12],[15,24],[25,26]]
 输出：[[1,2],[5,5],[8,10],[15,23],[24,24],[25,25]]
@@ -1307,7 +1307,7 @@ mklink /D &lt;span class="s2">&amp;#34;C:\Users\{USER}\.vscode\extensions&amp;#3
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/leetcode/">leetcode</category><category domain="https://code.saltfish.fun/tags/leetcode/">leetcode</category></item><item><title>Leetcode88</title><link>https://code.saltfish.fun/posts/leetcode88/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/leetcode88/</guid><pubDate>Sat, 07 Mar 2020 21:30:36 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="88-合并两个有序数组">88. 合并两个有序数组&lt;/h2>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/leetcode/">leetcode</category><category domain="https://xs-cw.github.io/tags/leetcode/">leetcode</category></item><item><title>Leetcode88</title><link>https://xs-cw.github.io/posts/leetcode88/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/leetcode88/</guid><pubDate>Sat, 07 Mar 2020 21:30:36 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="88-合并两个有序数组">88. 合并两个有序数组&lt;/h2>
 &lt;p>给你两个有序整数数组 &lt;code>nums1&lt;/code> 和 &lt;code>nums2&lt;/code>，请你将 &lt;code>nums2&lt;/code> 合并到 &lt;code>nums1&lt;/code> 中，使 &lt;code>num1&lt;/code> 成为一个有序数组。&lt;/p>
 &lt;h3 id="说明">说明:&lt;/h3>
 &lt;ul>
@@ -1381,7 +1381,7 @@ mklink /D &lt;span class="s2">&amp;#34;C:\Users\{USER}\.vscode\extensions&amp;#3
 &lt;span class="p">}&lt;/span>
 &lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description><category domain="https://code.saltfish.fun/categories/leetcode/">leetcode</category><category domain="https://code.saltfish.fun/tags/leetcode/">leetcode</category></item><item><title>Docker-Compose安装出错</title><link>https://code.saltfish.fun/posts/docker-compose-error/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/docker-compose-error/</guid><pubDate>Wed, 04 Mar 2020 21:05:39 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>&lt;strong>1、安装docker-compose&lt;/strong>&lt;/p>
+&lt;/div></description><category domain="https://xs-cw.github.io/categories/leetcode/">leetcode</category><category domain="https://xs-cw.github.io/tags/leetcode/">leetcode</category></item><item><title>Docker-Compose安装出错</title><link>https://xs-cw.github.io/posts/docker-compose-error/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-compose-error/</guid><pubDate>Wed, 04 Mar 2020 21:05:39 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>&lt;strong>1、安装docker-compose&lt;/strong>&lt;/p>
 &lt;ol>
 &lt;li>
 &lt;p>首先检查Linux有没有安装Python-pip包，直接执行 &lt;code>yum install python-pip&lt;/code>&lt;/p>
@@ -1464,7 +1464,7 @@ docker-compose version 1.8.1, build 878cff1
 &lt;/div>
 &lt;/div>&lt;p>本文来自&lt;a href="https://www.cnblogs.com">博客园&lt;/a>&lt;/p>
 &lt;p>感谢作者&lt;a href="https://home.cnblogs.com/u/richiewlq/">Richie`&lt;/a>&lt;/p>
-&lt;p>查看原文&lt;a href="https://www.cnblogs.com/richiewlq/p/9203504.html">CentOS7下安装Docker-Compose No module named 'requests.packages.urllib3'&lt;/a>&lt;/p></description><category domain="https://code.saltfish.fun/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://code.saltfish.fun/categories/docker/">docker</category><category domain="https://code.saltfish.fun/tags/docker-compose/">docker-compose</category></item><item><title>系统安装找到启动路径</title><link>https://code.saltfish.fun/posts/system-find-boot/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/system-find-boot/</guid><pubDate>Wed, 04 Mar 2020 21:05:39 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>windows 系统安装启动盘启动时找不到启动路径&lt;/p>
+&lt;p>查看原文&lt;a href="https://www.cnblogs.com/richiewlq/p/9203504.html">CentOS7下安装Docker-Compose No module named 'requests.packages.urllib3'&lt;/a>&lt;/p></description><category domain="https://xs-cw.github.io/categories/%E8%BD%AF%E4%BB%B6%E4%BD%BF%E7%94%A8/">软件使用</category><category domain="https://xs-cw.github.io/categories/docker/">docker</category><category domain="https://xs-cw.github.io/tags/docker-compose/">docker-compose</category></item><item><title>系统安装找到启动路径</title><link>https://xs-cw.github.io/posts/system-find-boot/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/system-find-boot/</guid><pubDate>Wed, 04 Mar 2020 21:05:39 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>windows 系统安装启动盘启动时找不到启动路径&lt;/p>
 &lt;ol>
 &lt;li>找BOOTMGR文件在那个盘符&lt;code>find /bootmgr&lt;/code>&lt;/li>
 &lt;li>这样会在所有的磁盘根目录寻找文件，找到文件后接着进入该盘符 &lt;code>root (hd0,0)&lt;/code>&lt;/li>
@@ -1472,7 +1472,7 @@ docker-compose version 1.8.1, build 878cff1
 再执行&lt;code>boot&lt;/code>
 启动
 这样就OK了~！&lt;/li>
-&lt;/ol></description><category domain="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F/">系统</category><category domain="https://code.saltfish.fun/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">系统安装</category><category domain="https://code.saltfish.fun/tags/%E7%B3%BB%E7%BB%9F/">系统</category></item><item><title>Go项目标准结构</title><link>https://code.saltfish.fun/posts/go-project-layout/</link><guid isPermaLink="true">https://code.saltfish.fun/posts/go-project-layout/</guid><pubDate>Mon, 02 Mar 2020 14:28:16 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="go目录">Go目录&lt;/h2>
+&lt;/ol></description><category domain="https://xs-cw.github.io/categories/%E7%B3%BB%E7%BB%9F/">系统</category><category domain="https://xs-cw.github.io/categories/%E7%B3%BB%E7%BB%9F%E5%AE%89%E8%A3%85/">系统安装</category><category domain="https://xs-cw.github.io/tags/%E7%B3%BB%E7%BB%9F/">系统</category></item><item><title>Go项目标准结构</title><link>https://xs-cw.github.io/posts/go-project-layout/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/go-project-layout/</guid><pubDate>Mon, 02 Mar 2020 14:28:16 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h2 id="go目录">Go目录&lt;/h2>
 &lt;h3 id="cmd">&lt;code>/cmd&lt;/code>&lt;/h3>
 &lt;p>该目录用于存放 Go 项目的入口，即 main.go。一般来说，我们应该在 &lt;code>cmd&lt;/code>目录下创建子目录，子目录名称代表可执行程序的名称（例如&lt;code>/cmd/myapp&lt;/code>）。上面列出的优秀开源项目基本上遵循了这一规则。
 一般来说，该目录中的代码应该尽可能少。如果认为该代码可以导入并在其他项目中使用，那么它应该位于&lt;code>/pkg&lt;/code>目录中。如果该代码不可重用，或者不希望其他人重用它，则将该代码放在&lt;code>/internal&lt;/code>目录中。&lt;/p>
@@ -1522,4 +1522,4 @@ docker-compose version 1.8.1, build 878cff1
 &lt;h2 id="不应该拥有的目录">不应该拥有的目录&lt;/h2>
 &lt;h3 id="src">&lt;code>/src&lt;/code>&lt;/h3>
 &lt;p>有些Go项目确实有一个&lt;code>src&lt;/code>文件夹，但通常是Java开发人员通用模式。如果可以，请尝试不要采用此Java模式。你真的不希望您的Go代码或Go项目看起来像Java😀&lt;/p>
-&lt;p>不要混淆了项目的&lt;code>/src&lt;/code>和go语言的&lt;code>GOPATH&lt;/code>，如果你的项目里有&lt;code>/src&lt;/code>,那么你的项目路径可能就是&lt;code>/some/path/to/workspace/src/your_project/src/your_code.go&lt;/code>。go 1.11之后可以将项目放在&lt;code>GOPATH&lt;/code>之外的地方，但最好还是不要在项目里使用&lt;code>/src&lt;/code>目录&lt;/p></description><category domain="https://code.saltfish.fun/categories/go%E8%AF%AD%E8%A8%80/">go语言</category><category domain="https://code.saltfish.fun/tags/go%E8%AF%AD%E8%A8%80/">go语言</category><category domain="https://code.saltfish.fun/tags/go/">go</category><category domain="https://code.saltfish.fun/tags/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/">项目结构</category></item></channel></rss>
+&lt;p>不要混淆了项目的&lt;code>/src&lt;/code>和go语言的&lt;code>GOPATH&lt;/code>，如果你的项目里有&lt;code>/src&lt;/code>,那么你的项目路径可能就是&lt;code>/some/path/to/workspace/src/your_project/src/your_code.go&lt;/code>。go 1.11之后可以将项目放在&lt;code>GOPATH&lt;/code>之外的地方，但最好还是不要在项目里使用&lt;code>/src&lt;/code>目录&lt;/p></description><category domain="https://xs-cw.github.io/categories/go%E8%AF%AD%E8%A8%80/">go语言</category><category domain="https://xs-cw.github.io/tags/go%E8%AF%AD%E8%A8%80/">go语言</category><category domain="https://xs-cw.github.io/tags/go/">go</category><category domain="https://xs-cw.github.io/tags/%E9%A1%B9%E7%9B%AE%E7%BB%93%E6%9E%84/">项目结构</category></item></channel></rss>
