@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.74.3 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sun, 16 Aug 2020 09:26:30 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 08 Feb 2021 09:21:33 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
 &lt;ul>
 &lt;li>现象:&lt;/li>
 &lt;/ul>
@@ -75,16 +75,16 @@ git stash pop
 &lt;/span>&lt;span class="lnt">10
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="k">nginx&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">container_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>nginx&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>nginx&lt;span class="p">:&lt;/span>latest&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ports&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;pre class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="nt">nginx&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">container_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">nginx&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">image&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">nginx:latest&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">ports&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
 &lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="m">80&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">80&lt;/span>&lt;span class="w">
 &lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="m">443&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="m">443&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">volumes&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>- ./conf/nginx&lt;span class="p">:&lt;/span>/etc/nginx/conf.d&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>- ./log/nginx&lt;span class="p">:&lt;/span>/var/log/nginx&lt;span class="w">
-&lt;/span>&lt;span class="w"> &lt;/span>- ./static&lt;span class="p">:&lt;/span>/var/www&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nt">volumes&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">./conf/nginx:/etc/nginx/conf.d&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">./log/nginx:/var/log/nginx&lt;/span>&lt;span class="w">
+&lt;/span>&lt;span class="w"> &lt;/span>- &lt;span class="l">./static:/var/www&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>&lt;code>nginx.conf&lt;/code>配置:&lt;/p>
@@ -364,29 +364,29 @@ nginx配置如下:&lt;/li>
 &lt;tr>
 &lt;th>方案&lt;/th>
 &lt;th>优点&lt;/th>
-&lt;th align="left">缺点&lt;/th>
+&lt;th style="text-align:left">缺点&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
 &lt;td>简单分布式互斥锁（mutex key)&lt;/td>
 &lt;td>1. 思路简单 2. 保证一致性&lt;/td>
-&lt;td align="left">1.代码复杂度增大 2.存在死锁的风险 3. 存在线程池阻塞的风险&lt;/td>
+&lt;td style="text-align:left">1.代码复杂度增大 2.存在死锁的风险 3. 存在线程池阻塞的风险&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>“提前”使用互斥锁&lt;/td>
 &lt;td>1. 保证一致性&lt;/td>
-&lt;td align="left">同上&lt;/td>
+&lt;td style="text-align:left">同上&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>&amp;quot;永不过期&amp;quot;&lt;/td>
 &lt;td>1. 异步构建缓存，不会阻塞线程池&lt;/td>
-&lt;td align="left">1. 不保证一致性。2. 代码复杂度增大(每个value都要维护一个timekey)。 3. 占用一定的内存空间(每个value都要维护一个timekey)&lt;/td>
+&lt;td style="text-align:left">1. 不保证一致性。2. 代码复杂度增大(每个value都要维护一个timekey)。 3. 占用一定的内存空间(每个value都要维护一个timekey)&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td>netflix资源隔离组件hystrix&lt;/td>
 &lt;td>1. hystrix技术成熟，有效保证后端。2. hystrix监控强大。&lt;/td>
-&lt;td align="left">1. 部分访问存在降级策略。&lt;/td>
+&lt;td style="text-align:left">1. 部分访问存在降级策略。&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
