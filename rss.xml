@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 08 Feb 2021 09:23:19 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Wed, 10 Feb 2021 12:29:24 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
 &lt;ul>
 &lt;li>现象:&lt;/li>
 &lt;/ul>
@@ -238,222 +238,317 @@ nginx配置如下:&lt;/li>
 &lt;/div></description><category domain="https://xs-cw.github.io/categories/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://xs-cw.github.io/tags/%E5%89%8D%E7%AB%AF/">前端</category><category domain="https://xs-cw.github.io/tags/%E5%90%8E%E7%AB%AF/">后端</category></item><item><title>面试题</title><link>https://xs-cw.github.io/posts/interview_case/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/interview_case/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;ol>
 &lt;li>【2分】以下关于 linux 文件系统说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A/proc是真实存在于磁盘上的目录
-B/dev/null和/dev/zero是一个特殊的设备文件，并不会存在于磁盘上
-C/sys是sysfs文件系统挂载的标准位置
-Dcgroups系统通过读写文件与其交互
+&lt;pre>&lt;code>A /proc是真实存在于磁盘上的目录
+B /dev/null和/dev/zero是一个特殊的设备文件，并不会存在于磁盘上
+C /sys是sysfs文件系统挂载的标准位置
+D cgroups系统通过读写文件与其交互
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="2">
 &lt;li>【2分】如果由于某些原因需要查看多进程运行时的所有系统调用，可以使用什么命令&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Aptrace
-Bstrace -f
-Cstrace
-Dptrace -f
+&lt;pre>&lt;code>A ptrace
+B strace -f
+C strace
+D ptrace -f
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="3">
-&lt;li>【2分】下面这段代码输出什么？
-package main
-import (
-&amp;quot;fmt&amp;quot;
-)&lt;/li>
+&lt;li>【2分】下面这段代码输出什么？&lt;/li>
 &lt;/ol>
-&lt;p>func main() {
-var m = map[string]int{
-&amp;quot;A&amp;quot;: 21,
-&amp;quot;B&amp;quot;: 22,
-&amp;quot;C&amp;quot;: 23,
-}
-counter := 0
-for k, v := range m {
-if counter == 0 {
-delete(m, &amp;quot;A&amp;quot;)
-}
-counter++
-fmt.Println(k, v)
-}
-fmt.Println(&amp;quot;counter is &amp;quot;, counter)
-}&lt;/p>
-&lt;pre>&lt;code>A1
-B2
-C3
-D2 或 3
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">m&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kd">map&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="kt">string&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">{&lt;/span>
+&lt;span class="s">&amp;#34;A&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">21&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s">&amp;#34;B&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">22&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="s">&amp;#34;C&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">23&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">counter&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="nx">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">v&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">m&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">if&lt;/span> &lt;span class="nx">counter&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nb">delete&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">m&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s">&amp;#34;A&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">counter&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">k&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">v&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;counter is &amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">counter&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A 1
+B 2
+C 3
+D 2 或 3
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="4">
 &lt;li>【2分】存储器读写速率越高，每位的成本也越高，存储容量也小。解决这一问题的主要方法是采用&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>ACache
-B并行存储器
-C多级存储体系结构
-D缓冲技术
+&lt;pre>&lt;code>A Cache
+B 并行存储器
+C 多级存储体系结构
+D 缓冲技术
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="5">
 &lt;li>【2分】以下关于CPU与主存之间增加高速缓存(cache)的叙述中，错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Acache扩充了主存储器的容量
-Bcache可以降低由于CPU与主存之间的速度差异造成的系统性能影响
-Ccache的有效性是利用了对主存储器访问的局部性特征
-Dcache通常保存着主存储器中部分内容的一份副本
+&lt;pre>&lt;code>A cache扩充了主存储器的容量
+B cache可以降低由于CPU与主存之间的速度差异造成的系统性能影响
+C cache的有效性是利用了对主存储器访问的局部性特征
+D cache通常保存着主存储器中部分内容的一份副本
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="6">
-&lt;li>【2分】下面这段代码输出什么？
-package main
-import (
-&amp;quot;fmt&amp;quot;
-)&lt;/li>
+&lt;li>【2分】下面这段代码输出什么？&lt;/li>
 &lt;/ol>
-&lt;p>func increaseA() int {
-var i int
-defer func() {
-i++
-}()
-return i
-}&lt;/p>
-&lt;p>func increaseB() (r int) {
-defer func() {
-r++
-}()
-return r
-}&lt;/p>
-&lt;p>func main() {
-fmt.Println(increaseA())
-fmt.Println(increaseB())
-}&lt;/p>
-&lt;pre>&lt;code>A1 1
-B0 1
-C1 0
-D0 0
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">increaseA&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;span class="k">defer&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">i&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;span class="p">}()&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="nx">i&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">increaseB&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">r&lt;/span> &lt;span class="kt">int&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">defer&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">r&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;span class="p">}()&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="nx">r&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">increaseA&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nf">increaseB&lt;/span>&lt;span class="p">())&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A 1 1
+B 0 1
+C 1 0
+D 0 0
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="7">
 &lt;li>【2分】已知字符串S为”abaabaabacacaabaabcc”，模式串t为”abaabc”。采用KMP算法进行匹配，第一次出现“失配”（s[i]!=t[j]）时，i=j=5，则下次开始匹配时，i和j的值分别是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Ai=1 j=0
-Bi=5 j=0
-Ci=5 j=2
-Di=6 j=2
+&lt;pre>&lt;code>A i=1 j=0
+B i=5 j=0
+C i=5 j=2
+D i=6 j=2
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="8">
 &lt;li>【2分】假设初始栈为空，在对中缀表达式 a/b+(c&lt;em>d-e&lt;/em>f)/g 转化为后缀表达式的过程中，当扫描到 f 时，栈中元素依次是：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A+ ( * -
-B+ ( - *
-C/ + ( * - *
-D/ + - *
+&lt;pre>&lt;code>A + ( * -
+B + ( - *
+C / + ( * - *
+D / + - *
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="9">
 &lt;li>【2分】用哈希算法处理冲突时可能出现堆积现象，会受堆积直接影响的是：&lt;/li>
 &lt;/ol>
 &lt;pre>&lt;code>A 储存效率
-B散列函数
-C装载因子
-D平均查找长度
+B 散列函数
+C 装载因子
+D 平均查找长度
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="10">
-&lt;li>【2分】互斥锁，运行下面这段代码输出什么？
-package main
-import (
-&amp;quot;fmt&amp;quot;
-&amp;quot;sync&amp;quot;
-)&lt;/li>
+&lt;li>【2分】互斥锁，运行下面这段代码输出什么？&lt;/li>
 &lt;/ol>
-&lt;p>var mu sync.Mutex
-var chain string&lt;/p>
-&lt;p>func main() {
-chain = &amp;quot;main&amp;quot;
-A()
-fmt.Println(chain)
-}&lt;/p>
-&lt;p>func A() {
-mu.Lock()
-defer mu.Unlock()
-chain = chain + &amp;quot; --&amp;gt; A&amp;quot;
-B()
-}&lt;/p>
-&lt;p>func B() {
-chain = chain + &amp;quot; --&amp;gt; B&amp;quot;
-C()
-}&lt;/p>
-&lt;p>func C() {
-mu.Lock()
-defer mu.Unlock()
-chain = chain + &amp;quot; --&amp;gt; C&amp;quot;
-}&lt;/p>
-&lt;pre>&lt;code>Acan't compile
-Boutput main --&amp;gt; A --&amp;gt; B --&amp;gt; C
-Coutput main
-Dthe program exits because of panic
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;span class="lnt">22
+&lt;/span>&lt;span class="lnt">23
+&lt;/span>&lt;span class="lnt">24
+&lt;/span>&lt;span class="lnt">25
+&lt;/span>&lt;span class="lnt">26
+&lt;/span>&lt;span class="lnt">27
+&lt;/span>&lt;span class="lnt">28
+&lt;/span>&lt;span class="lnt">29
+&lt;/span>&lt;span class="lnt">30
+&lt;/span>&lt;span class="lnt">31
+&lt;/span>&lt;span class="lnt">32
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="s">&amp;#34;sync&amp;#34;&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">mu&lt;/span> &lt;span class="nx">sync&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">Mutex&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">chain&lt;/span> &lt;span class="kt">string&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">chain&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="s">&amp;#34;main&amp;#34;&lt;/span>
+&lt;span class="nf">A&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">chain&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">A&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">mu&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Lock&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="k">defer&lt;/span> &lt;span class="nx">mu&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Unlock&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="nx">chain&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">chain&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s">&amp;#34; --&amp;gt; A&amp;#34;&lt;/span>
+&lt;span class="nf">B&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">B&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">chain&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">chain&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s">&amp;#34; --&amp;gt; B&amp;#34;&lt;/span>
+&lt;span class="nf">C&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">C&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">mu&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Lock&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="k">defer&lt;/span> &lt;span class="nx">mu&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Unlock&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="nx">chain&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nx">chain&lt;/span> &lt;span class="o">+&lt;/span> &lt;span class="s">&amp;#34; --&amp;gt; C&amp;#34;&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A can't compile
+B output main --&amp;gt; A --&amp;gt; B --&amp;gt; C
+C output main
+D the program exits because of panic
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="11">
 &lt;li>【2分】对线性表进行折半查找时，要求线性表必须___ ___。&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A以顺序方式存储
-B以链接方式存储
-C以顺序方式存储，且元素按关键字有序排序
-D以链接方式存储，且元素按关键字有序排序
+&lt;pre>&lt;code>A 以顺序方式存储
+B 以链接方式存储
+C 以顺序方式存储，且元素按关键字有序排序
+D 以链接方式存储，且元素按关键字有序排序
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="12">
 &lt;li>【2分】关于内存分配说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A分页与分段都能达到地址隔离的效果
-B硬件中的TLB，帮助操作系统快速从虚拟地址定位到物理地址
-C如果TLB无法命中，则CPU或者操作系统会遍历分页表
-D操作系统运行时，程序获取的变量的内存地址是真实的物理地址
+&lt;pre>&lt;code>A 分页与分段都能达到地址隔离的效果
+B 硬件中的TLB，帮助操作系统快速从虚拟地址定位到物理地址
+C 如果TLB无法命中，则CPU或者操作系统会遍历分页表
+D 操作系统运行时，程序获取的变量的内存地址是真实的物理地址
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="13">
 &lt;li>【2分】关于 inode 以下说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Ainode的数量是有限的
-Binode信息中有一项叫做&amp;quot;链接数&amp;quot;，软链接会修改链接数
-C不同名称的文件有可能对应相同的inode
-D如果inode被使用完，则会导致无法创建文件
+&lt;pre>&lt;code>A inode的数量是有限的
+B inode信息中有一项叫做&amp;quot;链接数&amp;quot;，软链接会修改链接数
+C 不同名称的文件有可能对应相同的inode
+D 如果inode被使用完，则会导致无法创建文件
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="14">
 &lt;li>【2分】关于 Linux 的进程调度算法，相关说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A目前使用的调度算法只依靠优先级进行调度的
-B目前使用的调度算法可以保证IO密集型进程优先得到CPU资源
-C目前使用的调度算法在选择最优进程时时间复杂度为O(logN)
-D目前使用的调度方式拥有多个优先级列表
+&lt;pre>&lt;code>A 目前使用的调度算法只依靠优先级进行调度的
+B 目前使用的调度算法可以保证IO密集型进程优先得到CPU资源
+C 目前使用的调度算法在选择最优进程时时间复杂度为O(logN)
+D 目前使用的调度方式拥有多个优先级列表
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="15">
 &lt;li>【2分】关于进程间通讯说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A匿名管道只能用于父子进程间单向通讯
+&lt;pre>&lt;code>A 匿名管道只能用于父子进程间单向通讯
 B 命名管道实际是创建了一个管道文件
-C信号量只能用于父子进程间通讯与同步
-Dsocket通讯可以跨主机通讯
+C 信号量只能用于父子进程间通讯与同步
+D socket通讯可以跨主机通讯
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="16">
 &lt;li>【2分】关于 linux 中进程状态叙述错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A处于D（TASK_UNINTERRUPTIBLE）状态的进程在状态改变前不能接受任何信号，也无法被强制退出
-B处于Z（EXIT_ZOMBIE）状态的进程产生的原因是因为其父进程未收集其退出状态
-C处于R（TASK_RUNNING）状态的进程不可能处于就绪状态
-D处于S（TASK_INTERRUPTIBLE）状态的进程可能是正在等待IO事件
+&lt;pre>&lt;code>A 处于D（TASK_UNINTERRUPTIBLE）状态的进程在状态改变前不能接受任何信号，也无法被强制退出
+B 处于Z（EXIT_ZOMBIE）状态的进程产生的原因是因为其父进程未收集其退出状态
+C 处于R（TASK_RUNNING）状态的进程不可能处于就绪状态
+D 处于S（TASK_INTERRUPTIBLE）状态的进程可能是正在等待IO事件
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="17">
 &lt;li>【2分】活锁与死锁类似，都是资源匮乏导致的，产生的原因是进程彼此释放资源又同时占用对方释放的资源，以下相关说法错误的是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A死锁产生的必要条件仍然是活锁的产生的必要条件
-B处于活锁的多个进程处于非阻塞状态
-C消除死锁与活锁都可以通过杀掉进程来解决
-D活锁产生的必要条件不包括循环等待
+&lt;pre>&lt;code>A 死锁产生的必要条件仍然是活锁的产生的必要条件
+B 处于活锁的多个进程处于非阻塞状态
+C 消除死锁与活锁都可以通过杀掉进程来解决
+D 活锁产生的必要条件不包括循环等待
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="18">
 &lt;li>【2分】linux 中如果希望让内核跟踪数据包在iptables内的处理过程，可以在哪个表中加入相关规则&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Araw
-Bnat
-Cfilter
-Dmangle
+&lt;pre>&lt;code>A raw
+B nat
+C filter
+D mangle
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="19">
 &lt;li>【2分】 关于map，下面说法正确的是（）&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Amap反序列化时json.unmarshal的入参必须为map的地址
-B在函数调用中传递map，则子函数中对map元素的增加不会导致父函数中map的修改
-C在函数调用中传递map，则子函数中对map元素的修改不会导致父函数中map的修改
-D不能使用内置函数delete删除map的元素
+&lt;pre>&lt;code>A map反序列化时json.unmarshal的入参必须为map的地址
+B 在函数调用中传递map，则子函数中对map元素的增加不会导致父函数中map的修改
+C 在函数调用中传递map，则子函数中对map元素的修改不会导致父函数中map的修改
+D 不能使用内置函数delete删除map的元素
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="20">
 &lt;li>【2分】某文件的权限为-rw-r--r-x, 其对应权限用数值形式表示为&lt;/li>
