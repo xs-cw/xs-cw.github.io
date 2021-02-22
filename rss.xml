@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Wed, 10 Feb 2021 12:29:24 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 22 Feb 2021 15:01:14 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
 &lt;ul>
 &lt;li>现象:&lt;/li>
 &lt;/ul>
@@ -553,245 +553,344 @@ D 不能使用内置函数delete删除map的元素
 &lt;ol start="20">
 &lt;li>【2分】某文件的权限为-rw-r--r-x, 其对应权限用数值形式表示为&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A0775
-B0745
-C0645
-D0643
+&lt;pre>&lt;code>A 0775
+B 0745
+C 0645
+D 0643
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="21">
-&lt;li>【2分】下面这段代码输出什么？
-package main
-func main() {
-var (
-a int = 0
-b int64 = 0
-c interface{} = int(0)
-d interface{} = int64(0)
-)&lt;/li>
+&lt;li>【2分】下面这段代码输出什么？&lt;/li>
 &lt;/ol>
-&lt;p>println(c == 0)
-println(c == a)
-println(c == b)
-println(d == b)
-println(d == 0)
-}&lt;/p>
-&lt;pre>&lt;code>Atrue true false true false
-Btrue false false true false
-Ctrue true true false false
-Dtrue true false true true
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;span class="nx">a&lt;/span> &lt;span class="kt">int&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;span class="nx">b&lt;/span> &lt;span class="kt">int64&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">0&lt;/span>
+&lt;span class="nx">c&lt;/span> &lt;span class="kd">interface&lt;/span>&lt;span class="p">{}&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">d&lt;/span> &lt;span class="kd">interface&lt;/span>&lt;span class="p">{}&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="nb">int64&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="nb">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">c&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nb">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">c&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nb">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">c&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">b&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nb">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">d&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="nx">b&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nb">println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">d&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A true true false true false
+B true false false true false
+C true true true false false
+D true true false true true
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;ol start="22">
 &lt;li>【2分】 对任意实数c，从有N个无序元素的数组中寻找元素a、b，使得 a+b 的结果最接近c，最快的平均时间复杂度是&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>AO(N^2)
-BO(log N)
-CO(N)
-DO(N^3)
-EO(NLogN)
-F不确定
+&lt;pre>&lt;code>A O(N^2)
+B O(log N)
+C O(N)
+D O(N^3)
+E O(NLogN)
+F 不确定
 &lt;/code>&lt;/pre>&lt;p>正确答案：E&lt;/p>
 &lt;h4 id="参考答案">参考答案：&lt;/h4>
 &lt;p>2sum问题，稍微改了改让google直接搜不到&lt;/p>
 &lt;ol start="23">
 &lt;li>【2分】 请问以下哪个协议使用UDP作为网络层传输？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>AHTTP
-BTelnet
-CDNS
-DSMTP
+&lt;pre>&lt;code>A HTTP
+B Telnet
+C DNS
+D SMTP
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="24">
 &lt;li>【2分】 &lt;code>top&lt;/code>命令中，哪个字段表示进程所占用的常驻内存使用量？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>AVIRT
-BRES
-CSWAP
-DDATA
+&lt;pre>&lt;code>A VIRT
+B RES
+C SWAP
+D DATA
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="25">
 &lt;li>【2分】 用户数据包 UDP 的首部字段有 16 个字节，这种说法正确吗？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A正确
-B不正确
+&lt;pre>&lt;code>A 正确
+B 不正确
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="26">
 &lt;li>【2分】 在使用&lt;code>ping&lt;/code> 命令时使用什么参数可以指定网卡或IP？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A-i
-B-I
-C-d
-D-D
+&lt;pre>&lt;code>A -i
+B -I
+C -d
+D -D
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="27">
 &lt;li>【2分】 默认情况下，&lt;code>ping&lt;/code>命令每一次发出的icmp包大小为多少？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A32
-B56
-C64
-D72
+&lt;pre>&lt;code>A 32
+B 56
+C 64
+D 72
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="28">
 &lt;li>【2分】 在分层中继系统中，数据链路层接收或发送信息的基本单位是（）&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A比特
-B字节
-C帧
-D数据报
+&lt;pre>&lt;code>A 比特
+B 字节
+C 帧
+D 数据报
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="29">
 &lt;li>【2分】epoll底层的工作机制属于以下哪种io模型：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Aasynchronous I/O
-BI/O multiplexing
-Csignal driven I/O
-Dnonblocking I/O
+&lt;pre>&lt;code>A asynchronous I/O
+B I/O multiplexing
+C signal driven I/O
+D nonblocking I/O
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="30">
 &lt;li>【2分】 当掩码位为/27时，子网中一共有多少个可用IP？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A30
-B64
-C32
-D62
+&lt;pre>&lt;code>A 30
+B 64
+C 32
+D 62
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;h4 id="参考答案-1">参考答案：&lt;/h4>
 &lt;p>网络号和广播地址不能算在内&lt;/p>
 &lt;ol start="31">
 &lt;li>【2分】 在 TCP/IP 体系结构中的 TCP 和 IP 所提供的服务分别为（）&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A链路层服务和网络层服务
-B网络层服务和传输层服务
-C传输层服务和应用层服务
-D传输层服务和网络层服务
+&lt;pre>&lt;code>A 链路层服务和网络层服务
+B 网络层服务和传输层服务
+C 传输层服务和应用层服务
+D 传输层服务和网络层服务
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="32">
 &lt;li>【2分】以下哪种加密方式属于非对称加密：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A3DES
-BAES
-CRSA256
-DSHA256
+&lt;pre>&lt;code>A 3DES
+B AES
+C RSA256
+D SHA256
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="33">
-&lt;li>【2分】以下这段代码的输出是？&lt;code>var a [2]int for _, x := range a { fmt.Println(&amp;quot;x =&amp;quot;, x) a[1] = 8 } fmt.Println(&amp;quot;a =&amp;quot;, a) for _, n := range a { n += 1 } fmt.Println(&amp;quot;a =&amp;quot; a) &lt;/code>&lt;/li>
+&lt;li>【2分】以下这段代码的输出是？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Ax = 0, x = 8, a = [0 8], a = [1 9]
-Bx = 0, x = 0, a = [0 8], a = [0 8]
-Cx = 0, x = 0, a = [0 8], a = [1 9]
-Dx = 0, x = 8, a = [0 8], a = [0 8]
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go"> &lt;span class="kd">var&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="kt">int&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="nx">_&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">x&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;x =&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">a&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="mi">8&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;a =&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="nx">_&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">n&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">a&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">n&lt;/span> &lt;span class="o">+=&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;a =&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">a&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A x = 0, x = 8, a = [0 8], a = [1 9]
+B x = 0, x = 0, a = [0 8], a = [0 8]
+C x = 0, x = 0, a = [0 8], a = [1 9]
+D x = 0, x = 8, a = [0 8], a = [0 8]
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="34">
 &lt;li>【2分】现假设A进程与B进程建立了tcp连接。A进程发起了中断连接的动作（发送FIN报文），但B进程接收FIN报文后由于代码错误只发送了ACK报文即结束进程。假设此ACK报文被A进程接收。那么tcp连接的A端和B端分别处于什么状态：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>AFIN-WAIT-1, CLOSE-WAIT
-BFIN-WAIT-2, TIME-WAIT
+&lt;pre>&lt;code>A FIN-WAIT-1, CLOSE-WAIT
+B FIN-WAIT-2, TIME-WAIT
 C FIN-WAIT-1, TIME-WAIT
-DFIN-WAIT-2, CLOSE-WAIT
+D FIN-WAIT-2, CLOSE-WAIT
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="35">
 &lt;li>【2分】 mkdir 命令中，添加什么参数，使得在父目录不存在时，先创建父目录？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A-m
-B-f
-C-d
-D-p
+&lt;pre>&lt;code>A -m
+B -f
+C -d
+D -p
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="36">
 &lt;li>【2分】 linux发起socket读写操作时，线程状态转换将如何转换：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>A运行-&amp;gt;就绪
-B运行-&amp;gt;阻塞
-C就绪-&amp;gt;阻塞
+&lt;pre>&lt;code>A 运行-&amp;gt;就绪
+B 运行-&amp;gt;阻塞
+C 就绪-&amp;gt;阻塞
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="37">
 &lt;li>【2分】 如何将 &lt;code>test&lt;/code> 文件打包并使用gzip压缩？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Atar -zcvf test test.tar.gz
-Btar -zcvf test.tar.gz test
-Ctar -jcvf test.tar.gz test
-Dtar -jcvf test test.tar.gz
+&lt;pre>&lt;code>A tar -zcvf test test.tar.gz
+B tar -zcvf test.tar.gz test
+C tar -jcvf test.tar.gz test
+D tar -jcvf test test.tar.gz
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;h4 id="参考答案-2">参考答案：&lt;/h4>
 &lt;p>Linux tar命令使用&lt;/p>
 &lt;ol start="38">
-&lt;li>【2分】下面这段程序的输出是：
-&lt;code>func Foo() error { var err *os.PathError = nil return err } func main() { err := Foo() fmt.Println(err) fmt.Println(err == nil) }&lt;/code>&lt;/li>
+&lt;li>【2分】下面这段程序的输出是：&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Anil, false
-B&amp;quot;&amp;quot;, true
-Cnil, true
-Dnil, runtime error
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kd">func&lt;/span> &lt;span class="nf">Foo&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="kt">error&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">err&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="nx">os&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">PathError&lt;/span> &lt;span class="p">=&lt;/span> &lt;span class="kc">nil&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="nx">err&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">err&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nf">Foo&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">err&lt;/span> &lt;span class="o">==&lt;/span> &lt;span class="kc">nil&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A nil, false
+B &amp;quot;&amp;quot;, true
+C nil, true
+D nil, runtime error
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;h4 id="参考答案-3">参考答案：&lt;/h4>
 &lt;p>在Golang中，interface的动态类型和值都为空时才为nil&lt;/p>
 &lt;ol start="39">
 &lt;li>【2分】 如何根据&lt;code>free&lt;/code>命令的输出，得知目前实际可用内存？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Afree列数据
-Bfree列数据 - buffers列数据 + cached列数据
-Cfree列数据 + buffers列数据 + cached列数据
-Dfree列数据 + buffers列数据 - cached列数据
+&lt;pre>&lt;code>A free列数据
+B free列数据 - buffers列数据 + cached列数据
+C free列数据 + buffers列数据 + cached列数据
+D free列数据 + buffers列数据 - cached列数据
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;ol start="40">
 &lt;li>【2分】 ctrl + c 会给前台进程组中的进程发送什么信号？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>ASIGINT
-BSIGTSTP
-CSIGQUIT
-DSIGTERM
+&lt;pre>&lt;code>A SIGINT
+B SIGTSTP
+C SIGQUIT
+D SIGTERM
 &lt;/code>&lt;/pre>&lt;p>正确答案：A&lt;/p>
 &lt;h4 id="参考答案-4">参考答案：&lt;/h4>
 &lt;p>Linux信号机制&lt;/p>
 &lt;ol start="41">
-&lt;li>【2分】通道，运行下面这段代码输出什么？
-package main&lt;/li>
+&lt;li>【2分】通道，运行下面这段代码输出什么？&lt;/li>
 &lt;/ol>
-&lt;p>import &amp;quot;fmt&amp;quot;&lt;/p>
-&lt;p>func main() {
-var ch chan int
-var count int&lt;/p>
-&lt;p>go func() {
-ch &amp;lt;- 1
-}()&lt;/p>
-&lt;p>go func() {
-count++
-close(ch)
-}()&lt;/p>
-&lt;p>&amp;lt;-ch&lt;/p>
-&lt;p>fmt.Println(count)
-}&lt;/p>
-&lt;pre>&lt;code>Acan't compile
-Boutput 1
-Coutput 0
-Dthe program exits because of panic
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">ch&lt;/span> &lt;span class="kd">chan&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;span class="kd">var&lt;/span> &lt;span class="nx">count&lt;/span> &lt;span class="kt">int&lt;/span>
+&lt;span class="k">go&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">ch&lt;/span> &lt;span class="o">&amp;lt;-&lt;/span> &lt;span class="mi">1&lt;/span>
+&lt;span class="p">}()&lt;/span>
+&lt;span class="k">go&lt;/span> &lt;span class="kd">func&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">count&lt;/span>&lt;span class="o">++&lt;/span>
+&lt;span class="nb">close&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">ch&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}()&lt;/span>
+&lt;span class="o">&amp;lt;-&lt;/span>&lt;span class="nx">ch&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">count&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;pre>&lt;code>A can't compile
+B output 1
+C output 0
+D the program exits because of panic
 &lt;/code>&lt;/pre>&lt;p>正确答案：D&lt;/p>
 &lt;ol start="42">
 &lt;li>【2分】 ctrl + z 会给前台进程组中的进程发送什么信号？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>ASIGINT
-BSIGTSTP
-CSIGQUIT
-DSIGTERM
+&lt;pre>&lt;code>A SIGINT
+B SIGTSTP
+C SIGQUIT
+D SIGTERM
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;h4 id="参考答案-5">参考答案：&lt;/h4>
 &lt;p>Linux信号机制&lt;/p>
 &lt;ol start="43">
 &lt;li>【2分】 ctrl + / 会给前台进程组中的进程发送什么信号？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>ASIGINT
-BSIGTSTP
-CSIGQUIT
-DSIGTERM
+&lt;pre>&lt;code>A SIGINT
+B SIGTSTP
+C SIGQUIT
+D SIGTERM
 &lt;/code>&lt;/pre>&lt;p>正确答案：C&lt;/p>
 &lt;h4 id="参考答案-6">参考答案：&lt;/h4>
 &lt;p>Linux信号机制&lt;/p>
 &lt;ol start="44">
 &lt;li>【2分】 以下哪个应用(Application)需要用到ICMP协议？&lt;/li>
 &lt;/ol>
-&lt;pre>&lt;code>Aftp
-Btraceroute
-Ctcpdump
-Dnetstat
+&lt;pre>&lt;code>A ftp
+B traceroute
+C tcpdump
+D netstat
 &lt;/code>&lt;/pre>&lt;p>正确答案：B&lt;/p>
 &lt;ol start="45">
 &lt;li>【2分】读写锁，运行下面这段代码输出什么？
