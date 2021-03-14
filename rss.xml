@@ -1,4 +1,70 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.80.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 22 Feb 2021 15:01:14 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.81.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sun, 14 Mar 2021 14:36:19 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Questions-2021</title><link>https://xs-cw.github.io/posts/question_2021/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/question_2021/</guid><pubDate>Sun, 07 Mar 2021 10:42:49 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>mysql&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>事务隔离&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>mvcc&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>三个日志&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>B+ tree&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>索引 优化，索引失效 组合索引&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>回表&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>分库分表&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>自增id，雪片算法ID，uuid 各自优缺点&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>redis&lt;/p>
+&lt;ul>
+&lt;li>redis为什么快&lt;/li>
+&lt;li>常见场景，分布式锁redis与zookeeper有什么区别&lt;/li>
+&lt;li>缓存一致性&lt;/li>
+&lt;li>持久化 aof rdb&lt;/li>
+&lt;li>淘汰机制 lru lof&lt;/li>
+&lt;li>性能瓶颈&lt;/li>
+&lt;li>多线程&lt;/li>
+&lt;li>一致性hash&lt;/li>
+&lt;li>位置计算，交集并集，延时队列，订阅模式&lt;/li>
+&lt;li>底层数据结构&lt;/li>
+&lt;/ul>
+&lt;p>mq （kafka）&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>基本结构 topic，broker&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>丢消息，原理与处理方案&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>使用中的问题&lt;/p>
+&lt;ul>
+&lt;li>丢消息&lt;/li>
+&lt;li>没有死信&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>零拷贝&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>落盘持久化&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;p>计算机基础&lt;/p>
+&lt;ul>
+&lt;li>cpu缓存结构&lt;/li>
+&lt;li>进程，线程，协程的区别&lt;/li>
+&lt;/ul></description><category domain="https://xs-cw.github.io/categories/question/">question</category><category domain="https://xs-cw.github.io/tags/question/">question</category></item><item><title>Docker相关问题</title><link>https://xs-cw.github.io/posts/docker-problems/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/docker-problems/</guid><pubDate>Tue, 05 May 2020 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="docker-for-windows-启动kubernets问题">docker for windows 启动kubernets问题&lt;/h3>
 &lt;ul>
 &lt;li>现象:&lt;/li>
 &lt;/ul>
