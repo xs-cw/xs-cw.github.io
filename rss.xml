@@ -1,4 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.85.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Sun, 11 Jul 2021 13:33:38 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>Questions-2021</title><link>https://xs-cw.github.io/posts/question_2021/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/question_2021/</guid><pubDate>Sun, 07 Mar 2021 10:42:49 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>mysql&lt;/p>
+<?xml version="1.0" encoding="utf-8"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title>life worth</title><link>https://xs-cw.github.io/</link><description>MemE 是一个强大且可高度定制的 GoHugo 博客主题，专为个人博客设计。</description><generator>Hugo 0.85.0 https://gohugo.io/</generator><language>zh-CN</language><managingEditor>s4ltfish@gmail.com (saltfish)</managingEditor><webMaster>s4ltfish@gmail.com (saltfish)</webMaster><copyright>转载标明出处</copyright><lastBuildDate>Mon, 12 Jul 2021 02:14:16 +0000</lastBuildDate><atom:link rel="self" type="application/rss+xml" href="https://xs-cw.github.io/rss.xml"/><item><title>跨域问题</title><link>https://xs-cw.github.io/posts/generics/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/generics/</guid><pubDate>Sun, 11 Jul 2021 22:05:31 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;h3 id="go泛型试用">go泛型试用&lt;/h3>
+&lt;p>环境 Go1.17beta&lt;/p>
+&lt;p>使用命令 &lt;code>go build -gcflags=-G=3 &lt;/code>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre class="chroma">&lt;code class="language-go" data-lang="go">&lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="kd">type&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">T&lt;/span> &lt;span class="nx">any&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="kd">struct&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">data&lt;/span> &lt;span class="p">[]&lt;/span>&lt;span class="nx">T&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="p">])&lt;/span> &lt;span class="nf">mapFunc&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">T&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="k">for&lt;/span> &lt;span class="nx">i&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="k">range&lt;/span> &lt;span class="nx">x&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">data&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nx">x&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="nx">i&lt;/span>&lt;span class="p">])&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="k">return&lt;/span> &lt;span class="nx">x&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">vi&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="p">[]&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">6&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;span class="nx">n&lt;/span> &lt;span class="o">:=&lt;/span> &lt;span class="nx">name&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="kt">int&lt;/span>&lt;span class="p">]{&lt;/span>&lt;span class="nx">data&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="nx">vi&lt;/span>&lt;span class="p">}&lt;/span>
+&lt;span class="nx">n&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">mapFunc&lt;/span>&lt;span class="p">().&lt;/span>&lt;span class="nf">mapFunc&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;blockquote>
+&lt;p>也可以基于&lt;code>dev.go2go&lt;/code>分支构建go，使用&lt;code>go tool build xx.go2&lt;/code> 构建生成 .go文件&lt;/p>
+&lt;/blockquote></description><category domain="https://xs-cw.github.io/categories/%E6%B3%9B%E5%9E%8B/">泛型</category><category domain="https://xs-cw.github.io/tags/golang/">golang</category><category domain="https://xs-cw.github.io/tags/go/">go</category></item><item><title>Questions-2021</title><link>https://xs-cw.github.io/posts/question_2021/</link><guid isPermaLink="true">https://xs-cw.github.io/posts/question_2021/</guid><pubDate>Sun, 07 Mar 2021 10:42:49 +0800</pubDate><author>s4ltfish@gmail.com (saltfish)</author><copyright>转载标明出处</copyright><description>&lt;p>mysql&lt;/p>
 &lt;ul>
 &lt;li>
 &lt;p>事务隔离&lt;/p>
